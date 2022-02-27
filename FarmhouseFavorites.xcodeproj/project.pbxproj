@@ -17,6 +17,8 @@
 		014658D327CB77C60076ECDF /* FarmhouseFavoritesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014658D227CB77C60076ECDF /* FarmhouseFavoritesTests.swift */; };
 		014658DD27CB77C60076ECDF /* FarmhouseFavoritesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014658DC27CB77C60076ECDF /* FarmhouseFavoritesUITests.swift */; };
 		014658DF27CB77C60076ECDF /* FarmhouseFavoritesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014658DE27CB77C60076ECDF /* FarmhouseFavoritesUITestsLaunchTests.swift */; };
+		01F5D69127CBA51100E1CA0D /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */; };
+		01F5D69327CBC55D00E1CA0D /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		014658D827CB77C60076ECDF /* FarmhouseFavoritesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmhouseFavoritesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		014658DC27CB77C60076ECDF /* FarmhouseFavoritesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmhouseFavoritesUITests.swift; sourceTree = "<group>"; };
 		014658DE27CB77C60076ECDF /* FarmhouseFavoritesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmhouseFavoritesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		01F5D69527CBCF4000E1CA0D /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
+		01F5D69627CBCF4000E1CA0D /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Bold.ttf"; sourceTree = "<group>"; };
+		01F5D69727CBCF4000E1CA0D /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,8 @@
 		014658B727CB77C50076ECDF /* FarmhouseFavorites */ = {
 			isa = PBXGroup;
 			children = (
+				01F5D69427CBCF0E00E1CA0D /* Fonts */,
+				01F5D68F27CBA4F200E1CA0D /* View Controllers */,
 				014658B827CB77C50076ECDF /* AppDelegate.swift */,
 				014658BA27CB77C50076ECDF /* SceneDelegate.swift */,
 				014658BC27CB77C50076ECDF /* ViewController.swift */,
@@ -128,6 +137,25 @@
 				014658DE27CB77C60076ECDF /* FarmhouseFavoritesUITestsLaunchTests.swift */,
 			);
 			path = FarmhouseFavoritesUITests;
+			sourceTree = "<group>";
+		};
+		01F5D68F27CBA4F200E1CA0D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */,
+				01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		01F5D69427CBCF0E00E1CA0D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				01F5D69627CBCF4000E1CA0D /* LibreBaskerville-Bold.ttf */,
+				01F5D69527CBCF4000E1CA0D /* LibreBaskerville-Italic.ttf */,
+				01F5D69727CBCF4000E1CA0D /* LibreBaskerville-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +292,8 @@
 				014658C327CB77C50076ECDF /* FarmhouseFavorites.xcdatamodeld in Sources */,
 				014658BD27CB77C50076ECDF /* ViewController.swift in Sources */,
 				014658B927CB77C50076ECDF /* AppDelegate.swift in Sources */,
+				01F5D69127CBA51100E1CA0D /* MainTableViewController.swift in Sources */,
+				01F5D69327CBC55D00E1CA0D /* MainTableViewCell.swift in Sources */,
 				014658BB27CB77C50076ECDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,9 +471,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GX77HU5247;
+				DEVELOPMENT_TEAM = KCL29RH4A8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FarmhouseFavorites/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -456,8 +487,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.bitwyze.FarmhouseFavorites;
+				PRODUCT_BUNDLE_IDENTIFIER = org.bitwyze.FarmhouseFaves;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,9 +501,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GX77HU5247;
+				DEVELOPMENT_TEAM = KCL29RH4A8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FarmhouseFavorites/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -484,8 +517,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.bitwyze.FarmhouseFavorites;
+				PRODUCT_BUNDLE_IDENTIFIER = org.bitwyze.FarmhouseFaves;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,24 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X4N-EA-Efv">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LibreBaskerville-Bold.ttf">
+            <string>LibreBaskerville-Bold</string>
+        </array>
+        <array key="LibreBaskerville-Italic.ttf">
+            <string>LibreBaskerville-Italic</string>
+        </array>
+        <array key="LibreBaskerville-Regular.ttf">
+            <string>LibreBaskerville-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Main Table View Controller-->
+        <scene sceneID="TtO-0b-MUu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="ZDK-PA-Azg" customClass="MainTableViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="UUj-KQ-vQY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainTableViewCell" rowHeight="380" id="VjG-zt-Das" customClass="MainTableViewCell" customModule="FarmhouseFavorites" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="380"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VjG-zt-Das" id="xba-Xa-p7k">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="380"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPF-iJ-mC2">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="166"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="390" id="7Y2-lR-glw"/>
+                                                <constraint firstAttribute="width" secondItem="iPF-iJ-mC2" secondAttribute="height" multiplier="195:83" id="mZb-29-s9b"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Enjoy the sunrise&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrL-6M-LM2">
+                                            <rect key="frame" x="20" y="181" width="350" height="18.666666666666657"/>
+                                            <fontDescription key="fontDescription" name="LibreBaskerville-Italic" family="Libre Baskerville" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Farmers Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW8-AG-EXy">
+                                            <rect key="frame" x="20" y="219.66666666666666" width="350" height="30"/>
+                                            <fontDescription key="fontDescription" name="LibreBaskerville-Bold" family="Libre Baskerville" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Denkmalgeschützter Steintrakt auf zwei Etagen mit Terrasse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whL-f5-o2l">
+                                            <rect key="frame" x="20" y="264.66666666666669" width="350" height="35"/>
+                                            <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="190 qm für 6 Personen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-V3-s1r">
+                                            <rect key="frame" x="20" y="314.66666666666669" width="350" height="17.666666666666686"/>
+                                            <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zum apartment →" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0D-oN-7SN">
+                                            <rect key="frame" x="20" y="347.33333333333331" width="129.33333333333334" height="17.666666666666686"/>
+                                            <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="k0D-oN-7SN" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="1fg-At-KX6"/>
+                                        <constraint firstItem="cW8-AG-EXy" firstAttribute="trailing" secondItem="xba-Xa-p7k" secondAttribute="trailingMargin" id="7Kv-SJ-vtN"/>
+                                        <constraint firstItem="whL-f5-o2l" firstAttribute="trailing" secondItem="xba-Xa-p7k" secondAttribute="trailingMargin" id="Bbt-Sp-PUL"/>
+                                        <constraint firstItem="k0D-oN-7SN" firstAttribute="top" secondItem="MLy-V3-s1r" secondAttribute="bottom" constant="15" id="DAR-5j-QRm"/>
+                                        <constraint firstItem="iPF-iJ-mC2" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leading" id="FSu-gF-hBz"/>
+                                        <constraint firstItem="WrL-6M-LM2" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="JH0-CN-fAT"/>
+                                        <constraint firstItem="WrL-6M-LM2" firstAttribute="top" secondItem="iPF-iJ-mC2" secondAttribute="bottom" constant="15" id="Jq3-d1-kHH"/>
+                                        <constraint firstItem="cW8-AG-EXy" firstAttribute="top" secondItem="WrL-6M-LM2" secondAttribute="bottom" constant="20" id="LEe-qr-nsa"/>
+                                        <constraint firstItem="whL-f5-o2l" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="P8T-MU-dWq"/>
+                                        <constraint firstItem="cW8-AG-EXy" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="aU6-k9-g17"/>
+                                        <constraint firstItem="MLy-V3-s1r" firstAttribute="top" secondItem="whL-f5-o2l" secondAttribute="bottom" constant="15" id="gfG-L9-1rb"/>
+                                        <constraint firstItem="MLy-V3-s1r" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="k4G-bi-8gA"/>
+                                        <constraint firstItem="WrL-6M-LM2" firstAttribute="trailing" secondItem="xba-Xa-p7k" secondAttribute="trailingMargin" id="svy-wb-jgg"/>
+                                        <constraint firstItem="iPF-iJ-mC2" firstAttribute="top" secondItem="xba-Xa-p7k" secondAttribute="top" id="tTf-4M-uSA"/>
+                                        <constraint firstItem="MLy-V3-s1r" firstAttribute="trailing" secondItem="xba-Xa-p7k" secondAttribute="trailingMargin" id="uzV-Q2-CzA"/>
+                                        <constraint firstItem="whL-f5-o2l" firstAttribute="top" secondItem="cW8-AG-EXy" secondAttribute="bottom" constant="15" id="zpu-2T-JTL"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="whL-f5-o2l" id="FmV-WE-MfK"/>
+                                    <outlet property="imageView" destination="iPF-iJ-mC2" id="n8g-Ln-DA3"/>
+                                    <outlet property="infoLabel" destination="MLy-V3-s1r" id="9gB-Xd-o8q"/>
+                                    <outlet property="pictureImageView" destination="iPF-iJ-mC2" id="dpx-p6-sWm"/>
+                                    <outlet property="quoteLabel" destination="WrL-6M-LM2" id="3D2-FI-z1f"/>
+                                    <outlet property="titleLabel" destination="cW8-AG-EXy" id="8Qo-to-K9P"/>
+                                    <segue destination="PNv-Ms-aVg" kind="show" id="o0q-zA-QRR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZDK-PA-Azg" id="bqB-Ab-cTT"/>
+                            <outlet property="delegate" destination="ZDK-PA-Azg" id="Vm3-RN-arq"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="Boot" id="r0D-ag-Hu1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ocr-9q-o7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1013.8461538461538" y="68.957345971563981"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="WiH-I9-iRb">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PNv-Ms-aVg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dRd-pS-mqP"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YlN-6l-1Xj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1937" y="63"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cAw-CX-MpS">
+            <objects>
+                <viewController id="9LH-yX-TdI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kCs-y7-dtq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlx-tv-SUB">
+                                <rect key="frame" x="20" y="123" width="354" height="638"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">W-LAN FARMHOUSE 1604: Feel@Home  SCHLÜSSEL Über dem 6-stelligen Pin-Code könnt ihr ab der Anreise 12 Uhr biz sir Abreise 12 Uhr mit Eurem Pin die Haupteinganstüre und auch Eure Zimmer-Türe öffnen (das ist ein und derselbe Pin-Code)  YOGA Yogastudio mit Yogamatten im Haupthaus, 1. Etage - jederzeit nutzen bitte Oder eine Yoga-Matte mit aufs Zimmer nehmen  HEIZUNG Wir heizen mit einer Luft-Wärme-Pumpe zum ganzen Haus gibt es Fußbodenheizung. Durch das kleine Rädchen am Zimmereingang kannst Du deine perönliche Wärme regulieren.  Das gibt es: Teekocher
+Kaffee-Maschine: Nespresso / Filter - Kaffee
+2 Herdplatten / 2 Töpfe, 2 Pfannen / Toaster / Saftpresse Staubsauger im Gang vor der Türe Spülmaschine, Tabs sind under der Spüle in der Küche (+Salz, +Klarspüler) Waschmaschine für alle im EG, Waschpulver ist vorrätig  MÜLLENSTORGUNG under der Tenne outdoor  SERVICE-Nummern Whats app Service für sonstige Fragen / W¨nsche: 017/2674438 Hausmeister Ivica (bitte nur im Notfall): 0173/8273444 </mutableString>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="y8i-tH-jNI">
+                                <rect key="frame" x="155" y="44" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="cUS-ZG-sUC"/>
+                                    <constraint firstAttribute="width" constant="80" id="rkn-9f-yYO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ILa-8X-Keg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y8i-tH-jNI" firstAttribute="centerX" secondItem="kCs-y7-dtq" secondAttribute="centerX" id="dWN-i5-c5h"/>
+                            <constraint firstItem="y8i-tH-jNI" firstAttribute="top" secondItem="ILa-8X-Keg" secondAttribute="top" id="eUn-zA-9oe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Info" id="dsH-Yb-1G7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="omI-Tv-ZK4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.30769230769226" y="943.3649289099526"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="7sO-1O-KGQ">
+            <objects>
+                <tableViewController id="fvG-jF-mvu" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ptm-as-NWx">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CS6-Nb-ugi">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CS6-Nb-ugi" id="RIe-2f-Dam">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fvG-jF-mvu" id="Jec-FA-19j"/>
+                            <outlet property="delegate" destination="fvG-jF-mvu" id="KDd-MH-Oe9"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="Menu" selectedImage="Menu" id="btN-NS-noq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QtL-UT-czx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="944"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cU3-rs-gJ5">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="X4N-EA-Efv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hkL-by-bcT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZDK-PA-Azg" kind="relationship" relationship="viewControllers" id="g6d-2U-kDE"/>
+                        <segue destination="9LH-yX-TdI" kind="relationship" relationship="viewControllers" id="FYS-dQ-zgm"/>
+                        <segue destination="fvG-jF-mvu" kind="relationship" relationship="viewControllers" id="fRJ-wM-3SM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xn-j5-BC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Boot" width="50" height="50"/>
+        <image name="Info" width="50" height="50"/>
+        <image name="Logo" width="200" height="200"/>
+        <image name="Menu" width="50" height="50"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
