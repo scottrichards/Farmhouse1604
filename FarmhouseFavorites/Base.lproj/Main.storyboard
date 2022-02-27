@@ -28,46 +28,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainTableViewCell" rowHeight="380" id="VjG-zt-Das" customClass="MainTableViewCell" customModule="FarmhouseFavorites" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="380"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainTableViewCell" rowHeight="400" id="VjG-zt-Das" customClass="MainTableViewCell" customModule="FarmhouseFavorites" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="400"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VjG-zt-Das" id="xba-Xa-p7k">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="380"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="400"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPF-iJ-mC2">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPF-iJ-mC2">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="166"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="390" id="7Y2-lR-glw"/>
                                                 <constraint firstAttribute="width" secondItem="iPF-iJ-mC2" secondAttribute="height" multiplier="195:83" id="mZb-29-s9b"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Enjoy the sunrise&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrL-6M-LM2">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&quot;Enjoy the sunrise&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrL-6M-LM2">
                                             <rect key="frame" x="20" y="181" width="350" height="18.666666666666657"/>
                                             <fontDescription key="fontDescription" name="LibreBaskerville-Italic" family="Libre Baskerville" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Farmers Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW8-AG-EXy">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Farmers Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW8-AG-EXy">
                                             <rect key="frame" x="20" y="219.66666666666666" width="350" height="30"/>
                                             <fontDescription key="fontDescription" name="LibreBaskerville-Bold" family="Libre Baskerville" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Denkmalgeschützter Steintrakt auf zwei Etagen mit Terrasse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whL-f5-o2l">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Denkmalgeschützter Steintrakt auf zwei Etagen mit Terrasse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whL-f5-o2l">
                                             <rect key="frame" x="20" y="264.66666666666669" width="350" height="35"/>
                                             <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="190 qm für 6 Personen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-V3-s1r">
-                                            <rect key="frame" x="20" y="314.66666666666669" width="350" height="17.666666666666686"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="190 qm für 6 Personen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-V3-s1r">
+                                            <rect key="frame" x="20" y="314.66666666666663" width="350" height="17.666666666666686"/>
                                             <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zum apartment →" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0D-oN-7SN">
-                                            <rect key="frame" x="20" y="347.33333333333331" width="129.33333333333334" height="17.666666666666686"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="zum apartment →" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0D-oN-7SN">
+                                            <rect key="frame" x="20" y="347.33333333333326" width="129.33333333333334" height="17.666666666666686"/>
                                             <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -79,9 +78,11 @@
                                         <constraint firstItem="whL-f5-o2l" firstAttribute="trailing" secondItem="xba-Xa-p7k" secondAttribute="trailingMargin" id="Bbt-Sp-PUL"/>
                                         <constraint firstItem="k0D-oN-7SN" firstAttribute="top" secondItem="MLy-V3-s1r" secondAttribute="bottom" constant="15" id="DAR-5j-QRm"/>
                                         <constraint firstItem="iPF-iJ-mC2" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leading" id="FSu-gF-hBz"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="k0D-oN-7SN" secondAttribute="bottom" constant="24" id="IYm-1n-8p1"/>
                                         <constraint firstItem="WrL-6M-LM2" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="JH0-CN-fAT"/>
                                         <constraint firstItem="WrL-6M-LM2" firstAttribute="top" secondItem="iPF-iJ-mC2" secondAttribute="bottom" constant="15" id="Jq3-d1-kHH"/>
                                         <constraint firstItem="cW8-AG-EXy" firstAttribute="top" secondItem="WrL-6M-LM2" secondAttribute="bottom" constant="20" id="LEe-qr-nsa"/>
+                                        <constraint firstAttribute="trailing" secondItem="iPF-iJ-mC2" secondAttribute="trailing" id="Ojj-h3-itm"/>
                                         <constraint firstItem="whL-f5-o2l" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="P8T-MU-dWq"/>
                                         <constraint firstItem="cW8-AG-EXy" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="aU6-k9-g17"/>
                                         <constraint firstItem="MLy-V3-s1r" firstAttribute="top" secondItem="whL-f5-o2l" secondAttribute="bottom" constant="15" id="gfG-L9-1rb"/>
@@ -122,7 +123,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YlN-6l-1Xj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1937" y="63"/>
+            <point key="canvasLocation" x="1948" y="77"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cAw-CX-MpS">
