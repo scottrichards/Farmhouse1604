@@ -24,6 +24,9 @@
 		01F5D69A27CBD71F00E1CA0D /* LibreBaskerville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01F5D69727CBCF4000E1CA0D /* LibreBaskerville-Regular.ttf */; };
 		01F5D69D27CBE24C00E1CA0D /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69C27CBE24C00E1CA0D /* MainHeaderView.swift */; };
 		01F5D69F27CBE2DD00E1CA0D /* MainHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F5D69E27CBE2DD00E1CA0D /* MainHeaderView.xib */; };
+		01F5D6A227CC9CD900E1CA0D /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D6A127CC9CD900E1CA0D /* NibView.swift */; };
+		01F5D6A427CC9CF800E1CA0D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D6A327CC9CF800E1CA0D /* UIView+.swift */; };
+		01F5D6A627CC9D8500E1CA0D /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D6A527CC9D8500E1CA0D /* NSObject+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		01F5D69727CBCF4000E1CA0D /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; };
 		01F5D69C27CBE24C00E1CA0D /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 		01F5D69E27CBE2DD00E1CA0D /* MainHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHeaderView.xib; sourceTree = "<group>"; };
+		01F5D6A127CC9CD900E1CA0D /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		01F5D6A327CC9CF800E1CA0D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		01F5D6A527CC9D8500E1CA0D /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,16 +121,17 @@
 		014658B727CB77C50076ECDF /* FarmhouseFavorites */ = {
 			isa = PBXGroup;
 			children = (
-				01F5D69427CBCF0E00E1CA0D /* Fonts */,
-				01F5D68F27CBA4F200E1CA0D /* View Controllers */,
 				014658B827CB77C50076ECDF /* AppDelegate.swift */,
-				014658BA27CB77C50076ECDF /* SceneDelegate.swift */,
-				014658BC27CB77C50076ECDF /* ViewController.swift */,
-				014658BE27CB77C50076ECDF /* Main.storyboard */,
 				014658C427CB77C60076ECDF /* Assets.xcassets */,
-				014658C627CB77C60076ECDF /* LaunchScreen.storyboard */,
-				014658C927CB77C60076ECDF /* Info.plist */,
+				01F5D6A027CC9CC000E1CA0D /* Extensions */,
 				014658C127CB77C50076ECDF /* FarmhouseFavorites.xcdatamodeld */,
+				01F5D69427CBCF0E00E1CA0D /* Fonts */,
+				014658C927CB77C60076ECDF /* Info.plist */,
+				014658C627CB77C60076ECDF /* LaunchScreen.storyboard */,
+				014658BE27CB77C50076ECDF /* Main.storyboard */,
+				014658BA27CB77C50076ECDF /* SceneDelegate.swift */,
+				01F5D68F27CBA4F200E1CA0D /* View Controllers */,
+				014658BC27CB77C50076ECDF /* ViewController.swift */,
 			);
 			path = FarmhouseFavorites;
 			sourceTree = "<group>";
@@ -173,6 +180,16 @@
 				01F5D69E27CBE2DD00E1CA0D /* MainHeaderView.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		01F5D6A027CC9CC000E1CA0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01F5D6A127CC9CD900E1CA0D /* NibView.swift */,
+				01F5D6A327CC9CF800E1CA0D /* UIView+.swift */,
+				01F5D6A527CC9D8500E1CA0D /* NSObject+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +331,10 @@
 				014658BD27CB77C50076ECDF /* ViewController.swift in Sources */,
 				01F5D69D27CBE24C00E1CA0D /* MainHeaderView.swift in Sources */,
 				014658B927CB77C50076ECDF /* AppDelegate.swift in Sources */,
+				01F5D6A227CC9CD900E1CA0D /* NibView.swift in Sources */,
+				01F5D6A627CC9D8500E1CA0D /* NSObject+.swift in Sources */,
 				01F5D69127CBA51100E1CA0D /* MainTableViewController.swift in Sources */,
+				01F5D6A427CC9CF800E1CA0D /* UIView+.swift in Sources */,
 				01F5D69327CBC55D00E1CA0D /* MainTableViewCell.swift in Sources */,
 				014658BB27CB77C50076ECDF /* SceneDelegate.swift in Sources */,
 			);

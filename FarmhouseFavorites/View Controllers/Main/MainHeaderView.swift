@@ -7,14 +7,15 @@
 
 import UIKit
 
-class MainHeaderView: UIView {
+class MainHeaderView: NibView {
 
-    /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
-        // Drawing code
+        print("Main Header View Draw")
     }
-    */
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }

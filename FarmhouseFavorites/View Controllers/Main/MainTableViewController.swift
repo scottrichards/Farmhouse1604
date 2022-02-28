@@ -28,6 +28,11 @@ class MainTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let headerFrame =  CGRect(x: 0, y: 0, width: self.view.frame.width, height: 110.0)
+        print("headerFrame: \(headerFrame)")
+        let headerView = MainHeaderView(frame: headerFrame)
+        tableView.tableHeaderView = headerView
+        self.tableView.updateConstraintsIfNeeded()
     }
 
     // MARK: - Table view data source
@@ -37,6 +42,7 @@ class MainTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("numberOfRowsInSection: \(mainTableDataArray.count)")
         return mainTableDataArray.count
     }
     
@@ -57,18 +63,27 @@ class MainTableViewController: UITableViewController {
         if indexPath.section == 0 {
             return UITableView.automaticDimension
         } else {
-            return 380.0
+            return 400.0
         }
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-                return UITableView.automaticDimension
-            } else {
-                return 380.0
-            }
+            return UITableView.automaticDimension
+        } else {
+            return 400.0
+        }
     }
 
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 0.0
+        } else {
+            return 0.0
+        }
+    }
+    
     
 
 }
