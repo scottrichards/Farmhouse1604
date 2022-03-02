@@ -27,6 +27,9 @@
 		01F5D6A227CC9CD900E1CA0D /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D6A127CC9CD900E1CA0D /* NibView.swift */; };
 		01F5D6A427CC9CF800E1CA0D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D6A327CC9CF800E1CA0D /* UIView+.swift */; };
 		01F5D6A627CC9D8500E1CA0D /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D6A527CC9D8500E1CA0D /* NSObject+.swift */; };
+		01F5D6A827CCB8F800E1CA0D /* UnitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D6A727CCB8F800E1CA0D /* UnitDetailViewController.swift */; };
+		01F5D6AE27CCC39000E1CA0D /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D6AD27CCC39000E1CA0D /* PageVC.swift */; };
+		01F5D6B027CCCA7F00E1CA0D /* PhotoAlbumPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D6AF27CCCA7F00E1CA0D /* PhotoAlbumPageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		01F5D6A127CC9CD900E1CA0D /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		01F5D6A327CC9CF800E1CA0D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		01F5D6A527CC9D8500E1CA0D /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		01F5D6A727CCB8F800E1CA0D /* UnitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitDetailViewController.swift; sourceTree = "<group>"; };
+		01F5D6AD27CCC39000E1CA0D /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
+		01F5D6AF27CCCA7F00E1CA0D /* PhotoAlbumPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumPageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 			children = (
 				014658B827CB77C50076ECDF /* AppDelegate.swift */,
 				014658C427CB77C60076ECDF /* Assets.xcassets */,
+				01F5D6AA27CCBAE400E1CA0D /* Data */,
 				01F5D6A027CC9CC000E1CA0D /* Extensions */,
 				014658C127CB77C50076ECDF /* FarmhouseFavorites.xcdatamodeld */,
 				01F5D69427CBCF0E00E1CA0D /* Fonts */,
@@ -157,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				01F5D69B27CBE22D00E1CA0D /* Main */,
+				01F5D6A927CCB90400E1CA0D /* Unit Detail */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -190,6 +198,23 @@
 				01F5D6A527CC9D8500E1CA0D /* NSObject+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		01F5D6A927CCB90400E1CA0D /* Unit Detail */ = {
+			isa = PBXGroup;
+			children = (
+				01F5D6AF27CCCA7F00E1CA0D /* PhotoAlbumPageVC.swift */,
+				01F5D6AD27CCC39000E1CA0D /* PageVC.swift */,
+				01F5D6A727CCB8F800E1CA0D /* UnitDetailViewController.swift */,
+			);
+			path = "Unit Detail";
+			sourceTree = "<group>";
+		};
+		01F5D6AA27CCBAE400E1CA0D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,15 +353,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				014658C327CB77C50076ECDF /* FarmhouseFavorites.xcdatamodeld in Sources */,
+				01F5D6AE27CCC39000E1CA0D /* PageVC.swift in Sources */,
 				014658BD27CB77C50076ECDF /* ViewController.swift in Sources */,
 				01F5D69D27CBE24C00E1CA0D /* MainHeaderView.swift in Sources */,
 				014658B927CB77C50076ECDF /* AppDelegate.swift in Sources */,
 				01F5D6A227CC9CD900E1CA0D /* NibView.swift in Sources */,
+				01F5D6B027CCCA7F00E1CA0D /* PhotoAlbumPageVC.swift in Sources */,
 				01F5D6A627CC9D8500E1CA0D /* NSObject+.swift in Sources */,
 				01F5D69127CBA51100E1CA0D /* MainTableViewController.swift in Sources */,
 				01F5D6A427CC9CF800E1CA0D /* UIView+.swift in Sources */,
 				01F5D69327CBC55D00E1CA0D /* MainTableViewCell.swift in Sources */,
 				014658BB27CB77C50076ECDF /* SceneDelegate.swift in Sources */,
+				01F5D6A827CCB8F800E1CA0D /* UnitDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +547,7 @@
 				DEVELOPMENT_TEAM = KCL29RH4A8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FarmhouseFavorites/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Farmhouse 1604";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -549,6 +578,7 @@
 				DEVELOPMENT_TEAM = KCL29RH4A8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FarmhouseFavorites/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Farmhouse 1604";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

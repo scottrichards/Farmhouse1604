@@ -23,16 +23,18 @@ class MainTableViewController: UITableViewController {
         MainTableCellData(image: "Main Farmers Loft", title: "Farmers Loft", quote: "“Enjoy the morning light”", info: "95 qm für 2 Personen", description: "Obergeschoss mit Balkon in Richtung Bauernhöfe im Seethal"),
         MainTableCellData(image: "Main Fishermans Home", title: "Fishermans Home", quote: "“Enjoy the sunset”", info: "230 qm  für 7 Personen", description: "Auf zwei Etagen mit Terrasse zu Streuobstwiesen und Schilf"),
         MainTableCellData(image: "Main Fishermans Apartment", title: "Fishermans Apartment", quote: "“Enjoy the aftenoon light”", info: "170 qm für 4 Personen", description: "Dachgeschoss mit Balkon und weitem Blick über das Schilf in Richtung See")
-        
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Hide the navigation bar
+        self.navigationController?.isNavigationBarHidden = true
         let headerFrame =  CGRect(x: 0, y: 0, width: self.view.frame.width, height: 110.0)
         print("headerFrame: \(headerFrame)")
         let headerView = MainHeaderView(frame: headerFrame)
         tableView.tableHeaderView = headerView
         self.tableView.updateConstraintsIfNeeded()
+        tableView.tableHeaderView?.updateConstraints()
     }
 
     // MARK: - Table view data source
@@ -42,7 +44,6 @@ class MainTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("numberOfRowsInSection: \(mainTableDataArray.count)")
         return mainTableDataArray.count
     }
     

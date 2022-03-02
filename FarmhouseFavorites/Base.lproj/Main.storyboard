@@ -100,7 +100,7 @@
                                     <outlet property="pictureImageView" destination="iPF-iJ-mC2" id="dpx-p6-sWm"/>
                                     <outlet property="quoteLabel" destination="WrL-6M-LM2" id="3D2-FI-z1f"/>
                                     <outlet property="titleLabel" destination="cW8-AG-EXy" id="8Qo-to-K9P"/>
-                                    <segue destination="PNv-Ms-aVg" kind="show" id="Lzr-gE-mfp"/>
+                                    <segue destination="6Up-IC-pz8" kind="show" id="K8d-sV-Axy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -115,15 +115,57 @@
             </objects>
             <point key="canvasLocation" x="1943.0769230769231" y="68.957345971563981"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="WiH-I9-iRb">
+        <!--Unit Detail View Controller-->
+        <scene sceneID="NsQ-CP-Lu4">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PNv-Ms-aVg" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="dRd-pS-mqP"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="6Up-IC-pz8" customClass="UnitDetailViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ukc-Fk-h9f"/>
                 </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YlN-6l-1Xj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyw-kf-yEP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2876.9230769230767" y="76.777251184834114"/>
+            <point key="canvasLocation" x="2929" y="69"/>
+        </scene>
+        <!--Photo Album PageVC-->
+        <scene sceneID="aqg-1c-How">
+            <objects>
+                <viewController storyboardIdentifier="PhotoAlbumPageVC" id="KEd-WC-ZnP" customClass="PhotoAlbumPageVC" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJG-gR-s7p">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description of photo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRx-cM-bjG">
+                                <rect key="frame" x="20" y="59.000000000000007" width="350" height="22.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22.329999999999998" id="YnM-2N-U1B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CYb-D5-WGZ">
+                                <rect key="frame" x="0.0" y="96.333333333333314" width="390" height="747.66666666666674"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ev9-Dp-UUJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KRx-cM-bjG" firstAttribute="top" secondItem="ev9-Dp-UUJ" secondAttribute="top" constant="15" id="I93-BI-0m3"/>
+                            <constraint firstItem="KRx-cM-bjG" firstAttribute="leading" secondItem="ev9-Dp-UUJ" secondAttribute="leading" constant="20" id="S2G-TA-RgZ"/>
+                            <constraint firstAttribute="bottom" secondItem="CYb-D5-WGZ" secondAttribute="bottom" id="S2i-9m-APn"/>
+                            <constraint firstItem="ev9-Dp-UUJ" firstAttribute="trailing" secondItem="KRx-cM-bjG" secondAttribute="trailing" constant="20" id="XcP-sk-24d"/>
+                            <constraint firstItem="CYb-D5-WGZ" firstAttribute="trailing" secondItem="ev9-Dp-UUJ" secondAttribute="trailing" id="kry-Kl-Ezo"/>
+                            <constraint firstItem="CYb-D5-WGZ" firstAttribute="leading" secondItem="ev9-Dp-UUJ" secondAttribute="leading" id="u04-eS-Koc"/>
+                            <constraint firstItem="CYb-D5-WGZ" firstAttribute="top" secondItem="KRx-cM-bjG" secondAttribute="bottom" constant="15" id="zQu-6J-riS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="KRx-cM-bjG" id="ZwL-aq-9xq"/>
+                        <outlet property="photoImageView" destination="CYb-D5-WGZ" id="iB1-OF-O9X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkd-Xt-0jJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3793.8461538461538" y="68.957345971563981"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cAw-CX-MpS">
