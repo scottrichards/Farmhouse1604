@@ -100,7 +100,6 @@
                                     <outlet property="pictureImageView" destination="iPF-iJ-mC2" id="dpx-p6-sWm"/>
                                     <outlet property="quoteLabel" destination="WrL-6M-LM2" id="3D2-FI-z1f"/>
                                     <outlet property="titleLabel" destination="cW8-AG-EXy" id="8Qo-to-K9P"/>
-                                    <segue destination="6Up-IC-pz8" kind="show" id="K8d-sV-Axy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -123,12 +122,12 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyw-kf-yEP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2929" y="69"/>
+            <point key="canvasLocation" x="3349" y="69"/>
         </scene>
         <!--Unit Detail Table View Controller-->
         <scene sceneID="7b7-Vf-WqT">
             <objects>
-                <tableViewController id="7AP-F6-IzS" customClass="UnitDetailTableViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="UnitDetailTableVC" id="7AP-F6-IzS" customClass="UnitDetailTableViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="rXJ-fa-g3n">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,7 +150,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehX-gX-RVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2585" y="766"/>
+            <point key="canvasLocation" x="2635" y="69"/>
         </scene>
         <!--Photo Album PageVC-->
         <scene sceneID="aqg-1c-How">

@@ -44,11 +44,12 @@ let UnitDetails: [UnitDetailData] = [
 ]
 
 class UnitDetailTableViewController: UITableViewController {
-
+    var data: UnitDetailData?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.registerNib(forType: DetailHeaderTableViewCell.self)
-        tableView.registerNib(forType: DetailHeaderTableViewCell.self)
+        tableView.registerNib(forType: DetailTopImagesTableViewCell.self)
     }
 
     // MARK: - Table view data source
@@ -66,7 +67,10 @@ class UnitDetailTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
         switch indexPath.section {
-        case 0: cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath)
+        case 0: if let cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath) as? DetailHeaderTableViewCell, let data = data {
+                cell.data = data
+            }
+            return cell
         case 1: cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath)
         case 2: cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath)
         case 3: cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath)

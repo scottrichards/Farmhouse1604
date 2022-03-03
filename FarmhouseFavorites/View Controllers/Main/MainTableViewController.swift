@@ -86,5 +86,16 @@ class MainTableViewController: UITableViewController {
     }
     
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row < mainTableDataArray.count {
+            let unitData = UnitDetails[indexPath.row]
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            if let unitDetailVC = storyBoard.instantiateViewController(withIdentifier: "UnitDetailTableVC") as? UnitDetailTableViewController {
+                unitDetailVC.data = unitData
+                self.navigationController?.pushViewController(unitDetailVC, animated: true)
+            }
+        }
+    }
+    
 
 }
