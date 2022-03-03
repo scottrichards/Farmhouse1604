@@ -19,10 +19,10 @@ struct MainTableCellData {
 
 class MainTableViewController: UITableViewController {
     let mainTableDataArray = [
-        MainTableCellData(image: "Main Farmers Home", title: "Farmers Home", quote: "“Enjoy the sunrise”", info: "190 qm für 6 Personen", description: "Denkmalgeschützter Steintrakt auf zwei Etagen mit Terrasse"),
-        MainTableCellData(image: "Main Farmers Loft", title: "Farmers Loft", quote: "“Enjoy the morning light”", info: "95 qm für 2 Personen", description: "Obergeschoss mit Balkon in Richtung Bauernhöfe im Seethal"),
-        MainTableCellData(image: "Main Fishermans Home", title: "Fishermans Home", quote: "“Enjoy the sunset”", info: "230 qm  für 7 Personen", description: "Auf zwei Etagen mit Terrasse zu Streuobstwiesen und Schilf"),
-        MainTableCellData(image: "Main Fishermans Apartment", title: "Fishermans Apartment", quote: "“Enjoy the aftenoon light”", info: "170 qm für 4 Personen", description: "Dachgeschoss mit Balkon und weitem Blick über das Schilf in Richtung See")
+        MainTableCellData(image: "Main Farmers Home", title: "Farmers Home", quote: "“Walk to the lake”", info: "190 qm für 6 Personen", description: "Denkmalgeschützter Steintrakt auf zwei Etagen mit Terrasse"),
+        MainTableCellData(image: "Main Farmers Loft", title: "Farmers Loft", quote: "“Watch the Sunrise”", info: "95 qm für 2 Personen", description: "Obergeschoss mit Balkon in Richtung Bauernhöfe im Seethal"),
+        MainTableCellData(image: "Main Fishermans Home", title: "Fishermans Home", quote: "“Enjoy the Stunning Views”", info: "230 qm  für 7 Personen", description: "Auf zwei Etagen mit Terrasse zu Streuobstwiesen und Schilf"),
+        MainTableCellData(image: "Main Fishermans Apartment", title: "Fishermans Apartment", quote: "“Enjoy the beautiful Sunsets”", info: "170 qm für 4 Personen", description: "Dachgeschoss mit Balkon und weitem Blick über das Schilf in Richtung See")
     ]
     
     override func viewDidLoad() {

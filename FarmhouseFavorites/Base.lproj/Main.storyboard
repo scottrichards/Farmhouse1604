@@ -125,6 +125,34 @@
             </objects>
             <point key="canvasLocation" x="2929" y="69"/>
         </scene>
+        <!--Unit Detail Table View Controller-->
+        <scene sceneID="7b7-Vf-WqT">
+            <objects>
+                <tableViewController id="7AP-F6-IzS" customClass="UnitDetailTableViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="rXJ-fa-g3n">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="meH-4i-vng">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="meH-4i-vng" id="mQo-Hq-cal">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7AP-F6-IzS" id="QpW-ar-qu9"/>
+                            <outlet property="delegate" destination="7AP-F6-IzS" id="6GD-QA-rJL"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehX-gX-RVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2585" y="766"/>
+        </scene>
         <!--Photo Album PageVC-->
         <scene sceneID="aqg-1c-How">
             <objects>
@@ -180,9 +208,9 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">W-LAN FARMHOUSE 1604: Feel@Home  SCHLÜSSEL Über dem 6-stelligen Pin-Code könnt ihr ab der Anreise 12 Uhr biz sir Abreise 12 Uhr mit Eurem Pin die Haupteinganstüre und auch Eure Zimmer-Türe öffnen (das ist ein und derselbe Pin-Code)  YOGA Yogastudio mit Yogamatten im Haupthaus, 1. Etage - jederzeit nutzen bitte Oder eine Yoga-Matte mit aufs Zimmer nehmen  HEIZUNG Wir heizen mit einer Luft-Wärme-Pumpe zum ganzen Haus gibt es Fußbodenheizung. Durch das kleine Rädchen am Zimmereingang kannst Du deine perönliche Wärme regulieren.  Das gibt es: Teekocher
+                                        <string key="content">W-LAN FARMHOUSE 1604: Feel@Home  SCHLÜSSEL Über dem 6-stelligen Pin-Code könnt ihr ab der Anreise 12 Uhr biz sir Abreise 12 Uhr mit Eurem Pin die Haupteinganstüre und auch Eure Zimmer-Türe öffnen (das ist ein und derselbe Pin-Code)  YOGA Yogastudio mit Yogamatten im Haupthaus, 1. Etage - jederzeit nutzen bitte Oder eine Yoga-Matte mit aufs Zimmer nehmen  HEIZUNG Wir heizen mit einer Luft-Wärme-Pumpe zum ganzen Haus gibt es Fußbodenheizung. Durch das kleine Rädchen am Zimmereingang kannst Du deine perönliche Wärme regulieren.  Das gibt es: Teekocher
 Kaffee-Maschine: Nespresso / Filter - Kaffee
-2 Herdplatten / 2 Töpfe, 2 Pfannen / Toaster / Saftpresse Staubsauger im Gang vor der Türe Spülmaschine, Tabs sind under der Spüle in der Küche (+Salz, +Klarspüler) Waschmaschine für alle im EG, Waschpulver ist vorrätig  MÜLLENSTORGUNG under der Tenne outdoor  SERVICE-Nummern Whats app Service für sonstige Fragen / W¨nsche: 017/2674438 Hausmeister Ivica (bitte nur im Notfall): 0173/8273444 </mutableString>
+2 Herdplatten / 2 Töpfe, 2 Pfannen / Toaster / Saftpresse Staubsauger im Gang vor der Türe Spülmaschine, Tabs sind under der Spüle in der Küche (+Salz, +Klarspüler) Waschmaschine für alle im EG, Waschpulver ist vorrätig  MÜLLENSTORGUNG under der Tenne outdoor  SERVICE-Nummern Whats app Service für sonstige Fragen / W¨nsche: 017/2674438 Hausmeister Ivica (bitte nur im Notfall): 0173/8273444 </string>
                                         <attributes>
                                             <color key="NSColor" systemColor="labelColor"/>
                                             <font key="NSFont" size="14" name="AvenirNext-Medium"/>
