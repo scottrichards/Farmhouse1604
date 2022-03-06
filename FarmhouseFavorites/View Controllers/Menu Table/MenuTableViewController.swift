@@ -9,6 +9,7 @@ import UIKit
 
 enum MoreMenuItems : Int {
     case language
+    case reserve
     case info
     case privacyPolicy
     
@@ -16,6 +17,8 @@ enum MoreMenuItems : Int {
         switch self {
         case .language:
             return "Sprache"
+        case .reserve:
+            return "Anfrage"
         case .info:
             return "Info"
         case .privacyPolicy:
