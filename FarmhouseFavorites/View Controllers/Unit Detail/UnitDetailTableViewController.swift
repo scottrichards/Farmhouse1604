@@ -71,7 +71,7 @@ class UnitDetailTableViewController: UITableViewController {
                 cell.data = data
             }
             return cell
-        case 1: cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath)
+        case 1: cell = tableView.dequeueReusableCell(withIdentifier: DetailTopImagesTableViewCell.shortClassName(), for: indexPath)
         case 2: cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath)
         case 3: cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath)
         default: return UITableViewCell()

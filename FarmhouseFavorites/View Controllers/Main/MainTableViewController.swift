@@ -87,7 +87,7 @@ class MainTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row < mainTableDataArray.count {
+        if indexPath.row < UnitDetails.count {
             let unitData = UnitDetails[indexPath.row]
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             if let unitDetailVC = storyBoard.instantiateViewController(withIdentifier: "UnitDetailTableVC") as? UnitDetailTableViewController {
