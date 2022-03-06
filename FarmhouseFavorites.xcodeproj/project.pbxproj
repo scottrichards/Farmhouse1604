@@ -15,6 +15,7 @@
 		0123D66127D5021600D574BE /* DetailFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0123D65F27D5021600D574BE /* DetailFooterTableViewCell.xib */; };
 		0123D66327D505E900D574BE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123D66227D505E900D574BE /* MenuTableViewController.swift */; };
 		0123D66527D5073300D574BE /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123D66427D5073300D574BE /* MenuTableViewCell.swift */; };
+		0123D66727D50FF600D574BE /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123D66627D50FF600D574BE /* UIStackView+.swift */; };
 		014658B927CB77C50076ECDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014658B827CB77C50076ECDF /* AppDelegate.swift */; };
 		014658BB27CB77C50076ECDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014658BA27CB77C50076ECDF /* SceneDelegate.swift */; };
 		014658BD27CB77C50076ECDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014658BC27CB77C50076ECDF /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 		0123D65F27D5021600D574BE /* DetailFooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFooterTableViewCell.xib; sourceTree = "<group>"; };
 		0123D66227D505E900D574BE /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		0123D66427D5073300D574BE /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		0123D66627D50FF600D574BE /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		014658B527CB77C50076ECDF /* FarmhouseFavorites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmhouseFavorites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		014658B827CB77C50076ECDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		014658BA27CB77C50076ECDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				01F5D6A527CC9D8500E1CA0D /* NSObject+.swift */,
 				0170360127D0BFC600573664 /* UITableView+.swift */,
 				01F5D6A327CC9CF800E1CA0D /* UIView+.swift */,
+				0123D66627D50FF600D574BE /* UIStackView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				014658BB27CB77C50076ECDF /* SceneDelegate.swift in Sources */,
 				0158E5CD27CFEC4300748725 /* UnitDetailTableViewController.swift in Sources */,
 				01F5D6A827CCB8F800E1CA0D /* UnitDetailViewController.swift in Sources */,
+				0123D66727D50FF600D574BE /* UIStackView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,6 +40,50 @@ let UnitDetails: [UnitDetailData] = [
                        ImageData(url: "Farmers-Home4", title: nil),
                        ImageData(url: "Farmers-Home5", title: nil),
                        ImageData(url: "Farmers-Home6", title: nil)]
+    ),
+    UnitDetailData(
+        header: HeaderData(
+            image: "Main Farmers Loft",
+            title: "Farmers Loft",
+            headline: "Ein Zuhause für Freunde und Familien.",
+            description: "Wohnen und schlafen auf zei Etagen in einem denkmalgeschützen Steintrakt mit Charakter. Alte Steinböden und antike Möbel wurden durch moderne Farben neu interpretiert. Viel Raum und Platz für 6-8 Personen, zugleich gemütliches und wohliges Ambiente."),
+        topImages: [ImageData(url: "Farmers-Home1", title: nil),
+                    ImageData(url: "Farmers-Home2", title: nil)],
+        info: "6 Personen / 190 qm Wohnfläche/ Erdgeschoss & Obergeschoss / Terrasse & Balkon\n\n3 Schlafzimmer, Wohnküche, Wohnzimmer\n\n3 Badezimmer (inkl. 1 „en suite“ Bad)\n\nAufbettung 2 Personen möglich\n\nkein Aufzug\n\nWochenpreis Sommerfrische & Zeit der Rauhnächte: 3.150 € (450 €/ Tag)\n\nWochenpreis Winterruhe: 2.700 € (385 €/ Tag)\n\n3-Tagespreis Sommerfrische & Zeit der Rauhnächte: 1.470 € (490 €/ Tag)\n\n3-Tagespreis Winterruhe: 1.350 € (450 €/ Tag)",
+        bottomImages: [ImageData(url: "Farmers-Home3", title: nil),
+                       ImageData(url: "Farmers-Home4", title: nil),
+                       ImageData(url: "Farmers-Home5", title: nil),
+                       ImageData(url: "Farmers-Home6", title: nil)]
+    ),
+    
+    UnitDetailData(
+        header: HeaderData(
+            image: "Main Fishermans Home",
+            title: "Fishermans Home",
+            headline: "Angekommen.",
+            description: "Lebendig, farbenfroh, inspirierend und romantisch. Großzügig und zugleich gemütlich. Ehemaliges Fischerzubehör vom Hof integriert in das Ambiente. Streuobstwiesen und große Schilf-Flächen von der Terrasse aus zu sehen."),
+        topImages: [ImageData(url: "Fishermans-Home1", title: nil),
+                    ImageData(url: "Fishermans-Home2", title: nil)],
+        info: "6–8 Personen / 230 qm Wohnfläche/ Erdgeschoss & Obergeschoss / Terrasse & Balkon\n\n3 Schlafzimmer, Wohnküche, Wohnzimmer\n\n3 Badezimmer (inkl. 1 „en suite“ Bad)\n\nAufbettung 2 Personen möglich\n\nkein Aufzug\n\nWochenpreis Sommerfrische & Zeit der Rauhnächte: 3.150 € (450 €/ Tag)\n\nWochenpreis Winterruhe: 2.700 € (385 €/ Tag)\n\n3-Tagespreis Sommerfrische & Zeit der Rauhnächte: 1.470 € (490 €/ Tag)\n\n3-Tagespreis Winterruhe: 1.350 € (450 €/ Tag)",
+        bottomImages: [ImageData(url: "Fishermans-Home3", title: nil),
+                       ImageData(url: "Fishermans-Home4", title: nil),
+                       ImageData(url: "Fishermans-Home5", title: nil),
+                       ImageData(url: "Fishermans-Home6", title: nil)]
+    ),
+   
+    UnitDetailData(
+        header: HeaderData(
+            image: "Main Fishermans Apartment",
+            title: "Fishermans Apartment",
+            headline: "Durchatmen mit Weitblick.",
+            description: "Extravagant. Individuell. Farbenfroh. Loftartiges Wohn-Ess-Küchen-Zimmer auf 100 m2 mit großzügigem Balkon in Richtung Streuobstwiesen und Schilf-Flächen. Gemütliche Samt-Daybeds für die ganze Familie. Dekorative Fisch-Bilder und Seerosen aus Ton schmücken die Wände. Sunset."),
+        topImages: [ImageData(url: "Fishermans-Apt1", title: nil),
+                    ImageData(url: "Fishermans-Apt2", title: nil)],
+        info: "4–6 Personen / 170 qm Wohnfläche/ Dachgeschoss mit hohen Decken / Balkon in Richtung See\n\nLoftartige Wohnküche mit Wohnzimmer\n2 Schlafzimmer (inkl. je 1 „en suite“ Bad), Gästetoilette\n\nAufbettung 2 Personen möglich\n\nkein Aufzug\n\nWochenpreis Sommerfrische & Zeit der Rauhnächte: 3.150 € (450 €/ Tag)\n\nWochenpreis Winterruhe: 2.700 € (385 €/ Tag)\n\n3-Tagespreis Sommerfrische & Zeit der Rauhnächte: 1.470 € (490 €/ Tag)\n\n3-Tagespreis Winterruhe: 1.350 € (450 €/ Tag)",
+        bottomImages: [ImageData(url: "Fishermans-Apt3", title: nil),
+                       ImageData(url: "Fishermans-Apt4", title: nil),
+                       ImageData(url: "Fishermans-Apt5", title: nil),
+                       ImageData(url: "Fishermans-Apt6", title: nil)]
     )
 ]
 
@@ -79,7 +123,7 @@ class UnitDetailTableViewController: UITableViewController {
             
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: DetailTopImagesTableViewCell.shortClassName(), for: indexPath) as? DetailTopImagesTableViewCell, let data = data {
-//                cell.populate(data: data)
+                cell.populate(data: data)
                 return cell
             }
         case 2:

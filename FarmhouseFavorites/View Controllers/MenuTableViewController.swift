@@ -14,9 +14,18 @@ enum MoreMenuItems : Int {
     func itemText() -> String {
         switch self {
         case .language:
-            return "Sprache          Deutsch 🇩🇪"
+            return "Sprache"
         case .privacyPolicy:
             return "Privacy"
+        }
+    }
+    
+    func rightItemText() -> String? {
+        switch self {
+        case .language:
+            return "Deutsch 🇩🇪"
+        case .privacyPolicy:
+            return nil
         }
     }
 }
@@ -45,6 +54,7 @@ class MenuTableViewController: UITableViewController {
         if let menuTableViewCell = cell as? MenuTableViewCell, indexPath.row < menuItems.count {
             let menuItem = menuItems[indexPath.row]
             menuTableViewCell.menuLabel.text = menuItem.itemText()
+            menuTableViewCell.rightItemLabel.text = menuItem.rightItemText()
         } else {
             cell.textLabel?.text = nil
         }

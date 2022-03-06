@@ -8,7 +8,9 @@
 import UIKit
 
 class DetailTopImagesTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var firstImageView: UIImageView!
+    @IBOutlet weak var secondImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -16,8 +18,11 @@ class DetailTopImagesTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func populate(data: UnitDetailData) {
+        firstImageView.image = UIImage(named: data.topImages[0].url)
+        secondImageView.image = UIImage(named: data.topImages[1].url)
     }
     
 }

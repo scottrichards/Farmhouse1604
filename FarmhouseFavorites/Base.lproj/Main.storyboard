@@ -261,7 +261,14 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmk-KQ-xDk">
-                                            <rect key="frame" x="20" y="19" width="334" height="21"/>
+                                            <rect key="frame" x="20" y="19" width="169" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wka-YQ-gmq">
+                                            <rect key="frame" x="211" y="20" width="136" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="16"/>
                                             <nil key="textColor"/>
@@ -271,6 +278,7 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="menuLabel" destination="lmk-KQ-xDk" id="pfB-GQ-5uL"/>
+                                    <outlet property="rightItemLabel" destination="wka-YQ-gmq" id="H30-69-AKn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

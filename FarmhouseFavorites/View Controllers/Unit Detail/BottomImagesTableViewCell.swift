@@ -24,6 +24,7 @@ class BottomImagesTableViewCell: UITableViewCell {
     }
     
     func populate(data: UnitDetailData) {
+        stackView.removeAllArrangedSubviews()
         for image in data.bottomImages {
             print("adding image: \(image.url)")
             if let image = UIImage(named: image.url) {
