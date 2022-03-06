@@ -9,12 +9,15 @@ import UIKit
 
 enum MoreMenuItems : Int {
     case language
+    case info
     case privacyPolicy
     
     func itemText() -> String {
         switch self {
         case .language:
             return "Sprache"
+        case .info:
+            return "Info"
         case .privacyPolicy:
             return "Privacy"
         }
@@ -25,6 +28,8 @@ enum MoreMenuItems : Int {
         case .language:
             return "Deutsch 🇩🇪"
         case .privacyPolicy:
+            return nil
+        default:
             return nil
         }
     }
