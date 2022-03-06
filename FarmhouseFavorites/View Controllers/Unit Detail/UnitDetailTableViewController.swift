@@ -51,13 +51,16 @@ class UnitDetailTableViewController: UITableViewController {
         tableView.registerNib(forType: DetailHeaderTableViewCell.self)
         tableView.registerNib(forType: DetailTopImagesTableViewCell.self)
         tableView.registerNib(forType: DetailInfoTableViewCell.self)
+        tableView.registerNib(forType: BottomImagesTableViewCell.self)
+        tableView.registerNib(forType: DetailFooterTableViewCell.self)
+        self.navigationController?.isNavigationBarHidden = false
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 4
+        return 5
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -66,34 +69,46 @@ class UnitDetailTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = UITableViewCell()
         switch indexPath.section {
-        case 0: if let cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath) as? DetailHeaderTableViewCell, let data = data {
+        case 0:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath) as? DetailHeaderTableViewCell, let data = data {
                 cell.data = data
                 cell.populate(data: data)
+                return cell
             }
-            return cell
+            
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: DetailTopImagesTableViewCell.shortClassName(), for: indexPath) as? DetailTopImagesTableViewCell, let data = data {
 //                cell.populate(data: data)
+                return cell
             }
         case 2:
             if let cell = tableView.dequeueReusableCell(withIdentifier: DetailInfoTableViewCell.shortClassName(), for: indexPath) as? DetailInfoTableViewCell, let data = data {
                 cell.populate(data: data)
+                return cell
             }
-        case 3: cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath)
+        case 3:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: BottomImagesTableViewCell.shortClassName(), for: indexPath) as? BottomImagesTableViewCell, let data = data {
+                cell.populate(data: data)
+                return cell
+            }
+        case 4:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: DetailFooterTableViewCell.shortClassName(), for: indexPath) as? DetailFooterTableViewCell {
+                return cell
+            }
         default: return UITableViewCell()
         }
-        
-        return cell
+        return UITableViewCell()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0: return 500.0
         case 1: return 600.0
-        case 2: return 500.0
-        default: return 400.0
+        case 2: return 550.0
+        case 3: return 900.0
+        case 4: return 400.0
+        default: return 900.0
         }
     }
 
