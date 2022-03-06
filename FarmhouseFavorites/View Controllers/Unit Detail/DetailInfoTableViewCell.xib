@@ -32,21 +32,36 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuC-S7-ahv">
-                                <rect key="frame" x="0.0" y="65" width="350" height="445"/>
+                                <rect key="frame" x="0.0" y="65" width="350" height="387"/>
                                 <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="122-8V-KWH">
+                                <rect key="frame" x="115" y="468" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1Fa-kF-o6V"/>
+                                    <constraint firstAttribute="height" constant="50" id="Hav-1a-kRP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
+                                <color key="tintColor" red="0.36862745098039218" green="0.44705882352941173" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Anfrage">
+                                    <color key="titleColor" red="0.36862745099999999" green="0.44705882349999998" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RZf-Dx-IrF" firstAttribute="top" secondItem="hb1-aV-pEw" secondAttribute="top" constant="20" id="6Yo-YU-Bgs"/>
                             <constraint firstAttribute="trailing" secondItem="JuC-S7-ahv" secondAttribute="trailing" id="7fW-nX-bWE"/>
                             <constraint firstAttribute="trailing" secondItem="RZf-Dx-IrF" secondAttribute="trailing" constant="8" id="FrU-JJ-Wgk"/>
+                            <constraint firstItem="122-8V-KWH" firstAttribute="top" secondItem="JuC-S7-ahv" secondAttribute="bottom" constant="16" id="I4a-yh-1GY"/>
+                            <constraint firstItem="122-8V-KWH" firstAttribute="centerX" secondItem="hb1-aV-pEw" secondAttribute="centerX" id="Qla-pG-Sjy"/>
                             <constraint firstItem="JuC-S7-ahv" firstAttribute="top" secondItem="RZf-Dx-IrF" secondAttribute="bottom" constant="20" id="TTN-xT-OJK"/>
                             <constraint firstItem="JuC-S7-ahv" firstAttribute="leading" secondItem="hb1-aV-pEw" secondAttribute="leading" id="j52-l6-cK8"/>
                             <constraint firstItem="RZf-Dx-IrF" firstAttribute="leading" secondItem="hb1-aV-pEw" secondAttribute="leading" constant="8" id="nky-Wl-vaV"/>
-                            <constraint firstAttribute="bottom" secondItem="JuC-S7-ahv" secondAttribute="bottom" constant="20" id="qJX-F4-pbM"/>
+                            <constraint firstAttribute="bottom" secondItem="122-8V-KWH" secondAttribute="bottom" constant="12" id="xyG-ha-KIH"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -60,6 +75,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bodyLabel" destination="JuC-S7-ahv" id="ZRJ-ou-VD7"/>
+                <outlet property="inquireButton" destination="122-8V-KWH" id="AY3-i7-lBs"/>
                 <outlet property="titleLabel" destination="RZf-Dx-IrF" id="tWQ-Ys-BNO"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
