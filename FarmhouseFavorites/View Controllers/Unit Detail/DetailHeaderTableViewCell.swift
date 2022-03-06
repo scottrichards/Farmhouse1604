@@ -21,6 +21,9 @@ class DetailHeaderTableViewCell: UITableViewCell {
         super.awakeFromNib()
         borderView.layer.borderColor = UIColor.lightGray.cgColor
         borderView.layer.borderWidth = 1.0
+        if let data = data {
+            populate(data: data)
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

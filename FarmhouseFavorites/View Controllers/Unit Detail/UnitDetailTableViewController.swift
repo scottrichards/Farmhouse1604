@@ -50,6 +50,7 @@ class UnitDetailTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.registerNib(forType: DetailHeaderTableViewCell.self)
         tableView.registerNib(forType: DetailTopImagesTableViewCell.self)
+        tableView.registerNib(forType: DetailInfoTableViewCell.self)
     }
 
     // MARK: - Table view data source
@@ -69,10 +70,17 @@ class UnitDetailTableViewController: UITableViewController {
         switch indexPath.section {
         case 0: if let cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath) as? DetailHeaderTableViewCell, let data = data {
                 cell.data = data
+                cell.populate(data: data)
             }
             return cell
-        case 1: cell = tableView.dequeueReusableCell(withIdentifier: DetailTopImagesTableViewCell.shortClassName(), for: indexPath)
-        case 2: cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath)
+        case 1:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: DetailTopImagesTableViewCell.shortClassName(), for: indexPath) as? DetailTopImagesTableViewCell, let data = data {
+//                cell.populate(data: data)
+            }
+        case 2:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: DetailInfoTableViewCell.shortClassName(), for: indexPath) as? DetailInfoTableViewCell, let data = data {
+                cell.populate(data: data)
+            }
         case 3: cell = tableView.dequeueReusableCell(withIdentifier: DetailHeaderTableViewCell.shortClassName(), for: indexPath)
         default: return UITableViewCell()
         }
@@ -82,9 +90,9 @@ class UnitDetailTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
-        case 0: return 600.0
+        case 0: return 500.0
         case 1: return 600.0
-        case 2: return 400.0
+        case 2: return 500.0
         default: return 400.0
         }
     }
