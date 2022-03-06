@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  ReserveViewController.swift
 //  FarmhouseFavorites
 //
-//  Created by Scott Richards on 2/27/22.
+//  Created by Scott Richards on 3/6/22.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ReserveViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-

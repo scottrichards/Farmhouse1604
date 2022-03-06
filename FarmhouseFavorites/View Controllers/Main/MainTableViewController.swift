@@ -36,6 +36,11 @@ class MainTableViewController: UITableViewController {
         self.tableView.updateConstraintsIfNeeded()
         tableView.tableHeaderView?.updateConstraints()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
 
     // MARK: - Table view data source
 
@@ -96,6 +101,4 @@ class MainTableViewController: UITableViewController {
             }
         }
     }
-    
-
 }

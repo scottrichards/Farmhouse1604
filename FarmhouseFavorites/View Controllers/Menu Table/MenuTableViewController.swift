@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum MoreMenuItems : Int {
+enum MoreMenuItems : Int, CaseIterable {
     case language
     case reserve
     case info
@@ -39,7 +39,7 @@ enum MoreMenuItems : Int {
 }
 
 class MenuTableViewController: UITableViewController {
-    var menuItems: [MoreMenuItems] = [.language, .privacyPolicy ]
+    var menuItems: [MoreMenuItems] = MoreMenuItems.allCases
     
     override func viewDidLoad() {
         super.viewDidLoad()
