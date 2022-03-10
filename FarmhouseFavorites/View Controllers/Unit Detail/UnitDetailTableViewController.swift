@@ -98,7 +98,7 @@ class UnitDetailTableViewController: UITableViewController {
         tableView.registerNib(forType: SecondImageTableViewCell.self)
         tableView.registerNib(forType: CheckInTableViewCell.self)
         tableView.registerNib(forType: OtherUnitsTableViewCell.self)
-        tableView.registerNib(forType: DetailFooterTableViewCell.self)
+        tableView.registerNib(forType: FooterTableViewCell.self)
         self.navigationController?.isNavigationBarHidden = false
     }
 
@@ -147,7 +147,7 @@ class UnitDetailTableViewController: UITableViewController {
                 return cell
             }
         case 6:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: DetailFooterTableViewCell.shortClassName(), for: indexPath) as? DetailFooterTableViewCell {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: FooterTableViewCell.shortClassName(), for: indexPath) as? DetailFooterTableViewCell {
                 return cell
             }
         default: return UITableViewCell()
@@ -163,7 +163,7 @@ class UnitDetailTableViewController: UITableViewController {
         case 3: return 1005.0
         case 4: return 240.0
         case 5: return 820.0
-        case 6: return 400.0
+        case 6: return 380.0
         default: return 900.0
         }
     }

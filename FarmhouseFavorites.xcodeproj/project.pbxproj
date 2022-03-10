@@ -36,6 +36,8 @@
 		0180BDE227DA5DD3004B161E /* CheckInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDE027DA5DD3004B161E /* CheckInTableViewCell.xib */; };
 		0180BDE527DA613C004B161E /* OtherUnitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180BDE327DA613C004B161E /* OtherUnitsTableViewCell.swift */; };
 		0180BDE627DA613C004B161E /* OtherUnitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDE427DA613C004B161E /* OtherUnitsTableViewCell.xib */; };
+		0180BDE927DAA2B8004B161E /* FooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180BDE727DAA2B8004B161E /* FooterTableViewCell.swift */; };
+		0180BDEA27DAA2B8004B161E /* FooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDE827DAA2B8004B161E /* FooterTableViewCell.xib */; };
 		01F5D69127CBA51100E1CA0D /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */; };
 		01F5D69327CBC55D00E1CA0D /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */; };
 		01F5D69827CBD71900E1CA0D /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01F5D69527CBCF4000E1CA0D /* LibreBaskerville-Italic.ttf */; };
@@ -102,6 +104,8 @@
 		0180BDE027DA5DD3004B161E /* CheckInTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckInTableViewCell.xib; sourceTree = "<group>"; };
 		0180BDE327DA613C004B161E /* OtherUnitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUnitsTableViewCell.swift; sourceTree = "<group>"; };
 		0180BDE427DA613C004B161E /* OtherUnitsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherUnitsTableViewCell.xib; sourceTree = "<group>"; };
+		0180BDE727DAA2B8004B161E /* FooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterTableViewCell.swift; sourceTree = "<group>"; };
+		0180BDE827DAA2B8004B161E /* FooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterTableViewCell.xib; sourceTree = "<group>"; };
 		01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		01F5D69527CBCF4000E1CA0D /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
@@ -271,14 +275,16 @@
 				0123D65727D4D79C00D574BE /* DetailInfoTableViewCell.xib */,
 				0170360B27D0C8CD00573664 /* DetailTopImagesTableViewCell.swift */,
 				0170360C27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib */,
+				0180BDE727DAA2B8004B161E /* FooterTableViewCell.swift */,
+				0180BDE827DAA2B8004B161E /* FooterTableViewCell.xib */,
+				0180BDE327DA613C004B161E /* OtherUnitsTableViewCell.swift */,
+				0180BDE427DA613C004B161E /* OtherUnitsTableViewCell.xib */,
 				01F5D6AD27CCC39000E1CA0D /* PageVC.swift */,
 				01F5D6AF27CCCA7F00E1CA0D /* PhotoAlbumPageVC.swift */,
 				0180BDDB27DA59A7004B161E /* SecondImageTableViewCell.swift */,
 				0180BDDC27DA59A7004B161E /* SecondImageTableViewCell.xib */,
 				0158E5CC27CFEC4300748725 /* UnitDetailTableViewController.swift */,
 				01F5D6A727CCB8F800E1CA0D /* UnitDetailViewController.swift */,
-				0180BDE327DA613C004B161E /* OtherUnitsTableViewCell.swift */,
-				0180BDE427DA613C004B161E /* OtherUnitsTableViewCell.xib */,
 			);
 			path = "Unit Detail";
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 				0170360A27D0C0D200573664 /* DetailHeaderTableViewCell.xib in Resources */,
 				014658C827CB77C60076ECDF /* LaunchScreen.storyboard in Resources */,
 				014658C527CB77C60076ECDF /* Assets.xcassets in Resources */,
+				0180BDEA27DAA2B8004B161E /* FooterTableViewCell.xib in Resources */,
 				01F5D69A27CBD71F00E1CA0D /* LibreBaskerville-Regular.ttf in Resources */,
 				0123D66127D5021600D574BE /* DetailFooterTableViewCell.xib in Resources */,
 				0180BDE227DA5DD3004B161E /* CheckInTableViewCell.xib in Resources */,
@@ -452,6 +459,7 @@
 				01F5D6A427CC9CF800E1CA0D /* UIView+.swift in Sources */,
 				0170360227D0BFC600573664 /* UITableView+.swift in Sources */,
 				01F5D69327CBC55D00E1CA0D /* MainTableViewCell.swift in Sources */,
+				0180BDE927DAA2B8004B161E /* FooterTableViewCell.swift in Sources */,
 				014658BB27CB77C50076ECDF /* SceneDelegate.swift in Sources */,
 				0158E5CD27CFEC4300748725 /* UnitDetailTableViewController.swift in Sources */,
 				0180BDE127DA5DD3004B161E /* CheckInTableViewCell.swift in Sources */,
