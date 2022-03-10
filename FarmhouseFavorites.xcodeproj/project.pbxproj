@@ -34,6 +34,8 @@
 		0180BDDE27DA59A7004B161E /* SecondImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDDC27DA59A7004B161E /* SecondImageTableViewCell.xib */; };
 		0180BDE127DA5DD3004B161E /* CheckInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180BDDF27DA5DD3004B161E /* CheckInTableViewCell.swift */; };
 		0180BDE227DA5DD3004B161E /* CheckInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDE027DA5DD3004B161E /* CheckInTableViewCell.xib */; };
+		0180BDE527DA613C004B161E /* OtherUnitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180BDE327DA613C004B161E /* OtherUnitsTableViewCell.swift */; };
+		0180BDE627DA613C004B161E /* OtherUnitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDE427DA613C004B161E /* OtherUnitsTableViewCell.xib */; };
 		01F5D69127CBA51100E1CA0D /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */; };
 		01F5D69327CBC55D00E1CA0D /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */; };
 		01F5D69827CBD71900E1CA0D /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01F5D69527CBCF4000E1CA0D /* LibreBaskerville-Italic.ttf */; };
@@ -98,6 +100,8 @@
 		0180BDDC27DA59A7004B161E /* SecondImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondImageTableViewCell.xib; sourceTree = "<group>"; };
 		0180BDDF27DA5DD3004B161E /* CheckInTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInTableViewCell.swift; sourceTree = "<group>"; };
 		0180BDE027DA5DD3004B161E /* CheckInTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckInTableViewCell.xib; sourceTree = "<group>"; };
+		0180BDE327DA613C004B161E /* OtherUnitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUnitsTableViewCell.swift; sourceTree = "<group>"; };
+		0180BDE427DA613C004B161E /* OtherUnitsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherUnitsTableViewCell.xib; sourceTree = "<group>"; };
 		01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		01F5D69527CBCF4000E1CA0D /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
@@ -273,6 +277,8 @@
 				0180BDDC27DA59A7004B161E /* SecondImageTableViewCell.xib */,
 				0158E5CC27CFEC4300748725 /* UnitDetailTableViewController.swift */,
 				01F5D6A727CCB8F800E1CA0D /* UnitDetailViewController.swift */,
+				0180BDE327DA613C004B161E /* OtherUnitsTableViewCell.swift */,
+				0180BDE427DA613C004B161E /* OtherUnitsTableViewCell.xib */,
 			);
 			path = "Unit Detail";
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 				0123D66127D5021600D574BE /* DetailFooterTableViewCell.xib in Resources */,
 				0180BDE227DA5DD3004B161E /* CheckInTableViewCell.xib in Resources */,
 				0123D65927D4D79C00D574BE /* DetailInfoTableViewCell.xib in Resources */,
+				0180BDE627DA613C004B161E /* OtherUnitsTableViewCell.xib in Resources */,
 				014658C027CB77C50076ECDF /* Main.storyboard in Resources */,
 				01F5D69927CBD71C00E1CA0D /* LibreBaskerville-Bold.ttf in Resources */,
 				01F5D69F27CBE2DD00E1CA0D /* MainHeaderView.xib in Resources */,
@@ -436,6 +443,7 @@
 				01F5D6B027CCCA7F00E1CA0D /* PhotoAlbumPageVC.swift in Sources */,
 				0123D66527D5073300D574BE /* MenuTableViewCell.swift in Sources */,
 				0180BDDD27DA59A7004B161E /* SecondImageTableViewCell.swift in Sources */,
+				0180BDE527DA613C004B161E /* OtherUnitsTableViewCell.swift in Sources */,
 				016FD0CB27D52818008A921B /* ReserveViewController.swift in Sources */,
 				01F5D6A627CC9D8500E1CA0D /* NSObject+.swift in Sources */,
 				0123D66027D5021600D574BE /* DetailFooterTableViewCell.swift in Sources */,
@@ -627,7 +635,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = KCL29RH4A8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FarmhouseFavorites/Info.plist;
@@ -659,7 +667,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = KCL29RH4A8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FarmhouseFavorites/Info.plist;
