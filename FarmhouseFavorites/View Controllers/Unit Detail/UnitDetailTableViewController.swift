@@ -139,15 +139,15 @@ class UnitDetailTableViewController: UITableViewController {
                 return cell
             }
         case 4:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: CheckInTableViewCell.shortClassName(), for: indexPath) as? DetailFooterTableViewCell {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: CheckInTableViewCell.shortClassName(), for: indexPath) as? CheckInTableViewCell {
                 return cell
             }
         case 5:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: OtherUnitsTableViewCell.shortClassName(), for: indexPath) as? DetailFooterTableViewCell {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: OtherUnitsTableViewCell.shortClassName(), for: indexPath) as? OtherUnitsTableViewCell {
                 return cell
             }
         case 6:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: FooterTableViewCell.shortClassName(), for: indexPath) as? DetailFooterTableViewCell {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: FooterTableViewCell.shortClassName(), for: indexPath) as? FooterTableViewCell {
                 return cell
             }
         default: return UITableViewCell()
