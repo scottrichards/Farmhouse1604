@@ -96,6 +96,7 @@ class UnitDetailTableViewController: UITableViewController {
         tableView.registerNib(forType: DetailTopImagesTableViewCell.self)
         tableView.registerNib(forType: DetailInfoTableViewCell.self)
         tableView.registerNib(forType: SecondImageTableViewCell.self)
+        tableView.registerNib(forType: CheckInTableViewCell.self)
         tableView.registerNib(forType: DetailFooterTableViewCell.self)
         self.navigationController?.isNavigationBarHidden = false
     }
@@ -104,7 +105,7 @@ class UnitDetailTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 5
+        return 6
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -137,6 +138,10 @@ class UnitDetailTableViewController: UITableViewController {
                 return cell
             }
         case 4:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: CheckInTableViewCell.shortClassName(), for: indexPath) as? DetailFooterTableViewCell {
+                return cell
+            }
+        case 5:
             if let cell = tableView.dequeueReusableCell(withIdentifier: DetailFooterTableViewCell.shortClassName(), for: indexPath) as? DetailFooterTableViewCell {
                 return cell
             }
@@ -151,7 +156,8 @@ class UnitDetailTableViewController: UITableViewController {
         case 1: return 600.0
         case 2: return 550.0
         case 3: return 1005.0
-        case 4: return 400.0
+        case 4: return 240.0
+        case 5: return 400.0
         default: return 900.0
         }
     }
