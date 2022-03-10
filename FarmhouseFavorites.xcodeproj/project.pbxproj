@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0123D65827D4D79C00D574BE /* DetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123D65627D4D79C00D574BE /* DetailInfoTableViewCell.swift */; };
 		0123D65927D4D79C00D574BE /* DetailInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0123D65727D4D79C00D574BE /* DetailInfoTableViewCell.xib */; };
-		0123D65C27D4FE1100D574BE /* BottomImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123D65A27D4FE1100D574BE /* BottomImagesTableViewCell.swift */; };
-		0123D65D27D4FE1100D574BE /* BottomImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0123D65B27D4FE1100D574BE /* BottomImagesTableViewCell.xib */; };
 		0123D66027D5021600D574BE /* DetailFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123D65E27D5021600D574BE /* DetailFooterTableViewCell.swift */; };
 		0123D66127D5021600D574BE /* DetailFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0123D65F27D5021600D574BE /* DetailFooterTableViewCell.xib */; };
 		0123D66327D505E900D574BE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123D66227D505E900D574BE /* MenuTableViewController.swift */; };
@@ -32,6 +30,8 @@
 		0170360A27D0C0D200573664 /* DetailHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0170360827D0C0D200573664 /* DetailHeaderTableViewCell.xib */; };
 		0170360D27D0C8CD00573664 /* DetailTopImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170360B27D0C8CD00573664 /* DetailTopImagesTableViewCell.swift */; };
 		0170360E27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0170360C27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib */; };
+		0180BDDD27DA59A7004B161E /* SecondImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180BDDB27DA59A7004B161E /* SecondImageTableViewCell.swift */; };
+		0180BDDE27DA59A7004B161E /* SecondImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDDC27DA59A7004B161E /* SecondImageTableViewCell.xib */; };
 		01F5D69127CBA51100E1CA0D /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */; };
 		01F5D69327CBC55D00E1CA0D /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */; };
 		01F5D69827CBD71900E1CA0D /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01F5D69527CBCF4000E1CA0D /* LibreBaskerville-Italic.ttf */; };
@@ -67,8 +67,6 @@
 /* Begin PBXFileReference section */
 		0123D65627D4D79C00D574BE /* DetailInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoTableViewCell.swift; sourceTree = "<group>"; };
 		0123D65727D4D79C00D574BE /* DetailInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailInfoTableViewCell.xib; sourceTree = "<group>"; };
-		0123D65A27D4FE1100D574BE /* BottomImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomImagesTableViewCell.swift; sourceTree = "<group>"; };
-		0123D65B27D4FE1100D574BE /* BottomImagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomImagesTableViewCell.xib; sourceTree = "<group>"; };
 		0123D65E27D5021600D574BE /* DetailFooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFooterTableViewCell.swift; sourceTree = "<group>"; };
 		0123D65F27D5021600D574BE /* DetailFooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFooterTableViewCell.xib; sourceTree = "<group>"; };
 		0123D66227D505E900D574BE /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +92,8 @@
 		0170360827D0C0D200573664 /* DetailHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		0170360B27D0C8CD00573664 /* DetailTopImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTopImagesTableViewCell.swift; sourceTree = "<group>"; };
 		0170360C27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTopImagesTableViewCell.xib; sourceTree = "<group>"; };
+		0180BDDB27DA59A7004B161E /* SecondImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondImageTableViewCell.swift; sourceTree = "<group>"; };
+		0180BDDC27DA59A7004B161E /* SecondImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondImageTableViewCell.xib; sourceTree = "<group>"; };
 		01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		01F5D69527CBCF4000E1CA0D /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
@@ -253,8 +253,6 @@
 		01F5D6A927CCB90400E1CA0D /* Unit Detail */ = {
 			isa = PBXGroup;
 			children = (
-				0123D65A27D4FE1100D574BE /* BottomImagesTableViewCell.swift */,
-				0123D65B27D4FE1100D574BE /* BottomImagesTableViewCell.xib */,
 				0170360727D0C0D200573664 /* DetailHeaderTableViewCell.swift */,
 				0170360827D0C0D200573664 /* DetailHeaderTableViewCell.xib */,
 				0123D65627D4D79C00D574BE /* DetailInfoTableViewCell.swift */,
@@ -267,6 +265,8 @@
 				01F5D6A727CCB8F800E1CA0D /* UnitDetailViewController.swift */,
 				0123D65E27D5021600D574BE /* DetailFooterTableViewCell.swift */,
 				0123D65F27D5021600D574BE /* DetailFooterTableViewCell.xib */,
+				0180BDDB27DA59A7004B161E /* SecondImageTableViewCell.swift */,
+				0180BDDC27DA59A7004B161E /* SecondImageTableViewCell.xib */,
 			);
 			path = "Unit Detail";
 			sourceTree = "<group>";
@@ -382,11 +382,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0180BDDE27DA59A7004B161E /* SecondImageTableViewCell.xib in Resources */,
 				01F5D69827CBD71900E1CA0D /* LibreBaskerville-Italic.ttf in Resources */,
 				0170360E27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib in Resources */,
 				0170360A27D0C0D200573664 /* DetailHeaderTableViewCell.xib in Resources */,
 				014658C827CB77C60076ECDF /* LaunchScreen.storyboard in Resources */,
-				0123D65D27D4FE1100D574BE /* BottomImagesTableViewCell.xib in Resources */,
 				014658C527CB77C60076ECDF /* Assets.xcassets in Resources */,
 				01F5D69A27CBD71F00E1CA0D /* LibreBaskerville-Regular.ttf in Resources */,
 				0123D66127D5021600D574BE /* DetailFooterTableViewCell.xib in Resources */,
@@ -428,7 +428,7 @@
 				0123D66327D505E900D574BE /* MenuTableViewController.swift in Sources */,
 				01F5D6B027CCCA7F00E1CA0D /* PhotoAlbumPageVC.swift in Sources */,
 				0123D66527D5073300D574BE /* MenuTableViewCell.swift in Sources */,
-				0123D65C27D4FE1100D574BE /* BottomImagesTableViewCell.swift in Sources */,
+				0180BDDD27DA59A7004B161E /* SecondImageTableViewCell.swift in Sources */,
 				016FD0CB27D52818008A921B /* ReserveViewController.swift in Sources */,
 				01F5D6A627CC9D8500E1CA0D /* NSObject+.swift in Sources */,
 				0123D66027D5021600D574BE /* DetailFooterTableViewCell.swift in Sources */,
@@ -629,6 +629,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,6 +661,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

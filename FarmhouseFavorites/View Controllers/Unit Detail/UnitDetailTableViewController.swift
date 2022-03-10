@@ -45,15 +45,15 @@ let UnitDetails: [UnitDetailData] = [
         header: HeaderData(
             image: "Main Farmers Loft",
             title: "Farmers Loft",
-            headline: "Ein Zuhause für Freunde und Familien.",
-            description: "Wohnen und schlafen auf zei Etagen in einem denkmalgeschützen Steintrakt mit Charakter. Alte Steinböden und antike Möbel wurden durch moderne Farben neu interpretiert. Viel Raum und Platz für 6-8 Personen, zugleich gemütliches und wohliges Ambiente."),
-        topImages: [ImageData(url: "Farmers-Home1", title: nil),
-                    ImageData(url: "Farmers-Home2", title: nil)],
-        info: "6 Personen / 190 qm Wohnfläche/ Erdgeschoss & Obergeschoss / Terrasse & Balkon\n\n3 Schlafzimmer, Wohnküche, Wohnzimmer\n\n3 Badezimmer (inkl. 1 „en suite“ Bad)\n\nAufbettung 2 Personen möglich\n\nkein Aufzug\n\nWochenpreis Sommerfrische & Zeit der Rauhnächte: 3.150 € (450 €/ Tag)\n\nWochenpreis Winterruhe: 2.700 € (385 €/ Tag)\n\n3-Tagespreis Sommerfrische & Zeit der Rauhnächte: 1.470 € (490 €/ Tag)\n\n3-Tagespreis Winterruhe: 1.350 € (450 €/ Tag)",
-        bottomImages: [ImageData(url: "Farmers-Home3", title: nil),
-                       ImageData(url: "Farmers-Home4", title: nil),
-                       ImageData(url: "Farmers-Home5", title: nil),
-                       ImageData(url: "Farmers-Home6", title: nil)]
+            headline: "Romantische Zeit zu zweit.",
+            description: "Traditionell. Wohlig. Gemütlicher Loft-Charakter verbindet Moderne und Landhaus-Stil. Hohe Decken."),
+        topImages: [ImageData(url: "Farmers-Loft1", title: nil),
+                    ImageData(url: "Farmers-Loft2", title: nil)],
+        info: "2–4 Personen / 95 qm Wohnfläche/ Obergeschoss / Balkonr\n\nWohnküche, Wohnzimmer und Schlafen in einem Raum\ngroßzügiges Bad mit separater Toilette\nkein Aufzug\nAufbettung Kind möglich\nkein Aufzug\n\nWochenpreis Sommerfrische: 1.980 € (280 €/ Tag)\nWochenpreis Winterruhe: 1.750 € (250 €/ Tag)\n\n3 Nächte Sommerfrische: 960 € (320 €/ Tag)\n3 Nächte Winterruhe: 870 € (290 €/ Tag)",
+        bottomImages: [ImageData(url: "Farmers-Loft3", title: nil),
+                       ImageData(url: "Farmers-Loft4", title: nil),
+                       ImageData(url: "Farmers-Loft5", title: nil),
+                       ImageData(url: "Farmers-Loft6", title: nil)]
     ),
     
     UnitDetailData(
@@ -95,7 +95,7 @@ class UnitDetailTableViewController: UITableViewController {
         tableView.registerNib(forType: DetailHeaderTableViewCell.self)
         tableView.registerNib(forType: DetailTopImagesTableViewCell.self)
         tableView.registerNib(forType: DetailInfoTableViewCell.self)
-        tableView.registerNib(forType: BottomImagesTableViewCell.self)
+        tableView.registerNib(forType: SecondImageTableViewCell.self)
         tableView.registerNib(forType: DetailFooterTableViewCell.self)
         self.navigationController?.isNavigationBarHidden = false
     }
@@ -132,7 +132,7 @@ class UnitDetailTableViewController: UITableViewController {
                 return cell
             }
         case 3:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: BottomImagesTableViewCell.shortClassName(), for: indexPath) as? BottomImagesTableViewCell, let data = data {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SecondImageTableViewCell.shortClassName(), for: indexPath) as? SecondImageTableViewCell, let data = data {
                 cell.populate(data: data)
                 return cell
             }
@@ -150,7 +150,7 @@ class UnitDetailTableViewController: UITableViewController {
         case 0: return 500.0
         case 1: return 600.0
         case 2: return 550.0
-        case 3: return 900.0
+        case 3: return 1005.0
         case 4: return 400.0
         default: return 900.0
         }
