@@ -35,7 +35,7 @@ let UnitDetails: [UnitDetailData] = [
             description: "Wohnen und schlafen auf zei Etagen in einem denkmalgeschützen Steintrakt mit Charakter. Alte Steinböden und antike Möbel wurden durch moderne Farben neu interpretiert. Viel Raum und Platz für 6-8 Personen, zugleich gemütliches und wohliges Ambiente."),
         topImages: [ImageData(url: "Farmers-Home1", title: nil),
                     ImageData(url: "Farmers-Home2", title: nil)],
-        info: "6 Personen / 190 qm Wohnfläche/ Erdgeschoss & Obergeschoss / Terrasse & Balkon\n\n3 Schlafzimmer, Wohnküche, Wohnzimmer\n\n3 Badezimmer (inkl. 1 „en suite“ Bad)\n\nAufbettung 2 Personen möglich\n\nkein Aufzug\n\nWochenpreis Sommerfrische & Zeit der Rauhnächte: 3.150 € (450 €/ Tag)\n\nWochenpreis Winterruhe: 2.700 € (385 €/ Tag)\n\n3-Tagespreis Sommerfrische & Zeit der Rauhnächte: 1.470 € (490 €/ Tag)\n\n3-Tagespreis Winterruhe: 1.350 € (450 €/ Tag)",
+        info: "6 Personen / 190 qm Wohnfläche/ Erdgeschoss & Obergeschoss / Terrasse & Balkon\n3 Schlafzimmer, Wohnküche, Wohnzimmer\n3 Badezimmer (inkl. 1 „en suite“ Bad)\nAufbettung 2 Personen möglich\nkein Aufzug\n\nWochenpreis Sommerfrische & Zeit der Rauhnächte: 3.150 € (450 €/ Tag)\nWochenpreis Winterruhe: 2.700 € (385 €/ Tag)\n\n3-Tagespreis Sommerfrische & Zeit der Rauhnächte: 1.470 € (490 €/ Tag)\n3-Tagespreis Winterruhe: 1.350 € (450 €/ Tag)",
         bottomImages: [ImageData(url: "Farmers-Home3", title: nil),
                        ImageData(url: "Farmers-Home4", title: nil),
                        ImageData(url: "Farmers-Home5", title: nil),
@@ -99,6 +99,7 @@ class UnitDetailTableViewController: UITableViewController {
         tableView.registerNib(forType: CheckInTableViewCell.self)
         tableView.registerNib(forType: OtherUnitsTableViewCell.self)
         tableView.registerNib(forType: FooterTableViewCell.self)
+        tableView.allowsSelection = false
         self.navigationController?.isNavigationBarHidden = false
     }
 
@@ -166,6 +167,16 @@ class UnitDetailTableViewController: UITableViewController {
         case 6: return 380.0
         default: return 900.0
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        switch indexPath.section {
+        default: return nil
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("did select row at indexPath.section: \(indexPath.section) row: \(indexPath.row)")
     }
 
 }
