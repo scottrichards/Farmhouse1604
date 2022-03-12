@@ -185,6 +185,7 @@ class UnitDetailTableViewController: UITableViewController {
             }
         case 5:
             if let cell = tableView.dequeueReusableCell(withIdentifier: OtherUnitsTableViewCell.shortClassName(), for: indexPath) as? OtherUnitsTableViewCell {
+                cell.delegate = self
                 cell.populate(data: otherUnits)
                 return cell
             }
@@ -200,9 +201,9 @@ class UnitDetailTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0: return 500.0
-        case 1: return 600.0
-        case 2: return 550.0
-        case 3: return 1005.0
+        case 1: return 550.0
+        case 2: return 500.0
+        case 3: return 900.0
         case 4: return 240.0
         case 5: return 820.0
         case 6: return 380.0
@@ -220,4 +221,18 @@ class UnitDetailTableViewController: UITableViewController {
         print("did select row at indexPath.section: \(indexPath.section) row: \(indexPath.row)")
     }
 
+}
+
+
+extension UnitDetailTableViewController: OtherUnitsTableViewCellDelegate {
+    func changeUnit(_ unit: UnitType) {
+        self.data = UnitDetails[unit.rawValue]
+        tableView.reloadData()
+        tableView.setContentOffset(CGPoint.zero, animated:true)
+        scrollToFirstRow()
+    }
+    
+    func scrollToFirstRow() {
+        let indexPath = IndexPath(row: 0, section: 0)
+        self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)    }
 }
