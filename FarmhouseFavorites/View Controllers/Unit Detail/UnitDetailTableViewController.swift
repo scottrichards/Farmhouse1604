@@ -20,14 +20,23 @@ struct HeaderData {
 }
 
 struct UnitDetailData {
+    var type: UnitType
     var header: HeaderData
     var topImages = [ImageData]()
     let info: String
     var bottomImages = [ImageData]()
 }
 
+enum UnitType: Int {
+    case FarmersHome
+    case FarmersLoft
+    case FishermansHome
+    case FishermansApartment
+}
+
 let UnitDetails: [UnitDetailData] = [
     UnitDetailData(
+        type: .FarmersHome,
         header: HeaderData(
             image: "Main Farmers Home",
             title: "Farmers Home",
@@ -42,6 +51,7 @@ let UnitDetails: [UnitDetailData] = [
                        ImageData(url: "Farmers-Home6", title: nil)]
     ),
     UnitDetailData(
+        type: .FarmersLoft,
         header: HeaderData(
             image: "Main Farmers Loft",
             title: "Farmers Loft",
@@ -57,6 +67,7 @@ let UnitDetails: [UnitDetailData] = [
     ),
     
     UnitDetailData(
+        type: .FishermansHome,
         header: HeaderData(
             image: "Main Fishermans Home",
             title: "Fishermans Home",
@@ -64,7 +75,7 @@ let UnitDetails: [UnitDetailData] = [
             description: "Lebendig, farbenfroh, inspirierend und romantisch. Großzügig und zugleich gemütlich. Ehemaliges Fischerzubehör vom Hof integriert in das Ambiente. Streuobstwiesen und große Schilf-Flächen von der Terrasse aus zu sehen."),
         topImages: [ImageData(url: "Fishermans-Home1", title: nil),
                     ImageData(url: "Fishermans-Home2", title: nil)],
-        info: "6–8 Personen / 230 qm Wohnfläche/ Erdgeschoss & Obergeschoss / Terrasse & Balkon\n\n3 Schlafzimmer, Wohnküche, Wohnzimmer\n\n3 Badezimmer (inkl. 1 „en suite“ Bad)\n\nAufbettung 2 Personen möglich\n\nkein Aufzug\n\nWochenpreis Sommerfrische & Zeit der Rauhnächte: 3.150 € (450 €/ Tag)\n\nWochenpreis Winterruhe: 2.700 € (385 €/ Tag)\n\n3-Tagespreis Sommerfrische & Zeit der Rauhnächte: 1.470 € (490 €/ Tag)\n\n3-Tagespreis Winterruhe: 1.350 € (450 €/ Tag)",
+        info: "6–8 Personen / 230 qm Wohnfläche/ Erdgeschoss & Obergeschoss / Terrasse & Balkon\n3 Schlafzimmer, Wohnküche, Wohnzimmer\n3 Badezimmer (inkl. 1 „en suite“ Bad)\nAufbettung 2 Personen möglich\nkein Aufzug\n\nWochenpreis Sommerfrische & Zeit der Rauhnächte: 3.150 € (450 €/ Tag)\nWochenpreis Winterruhe: 2.700 € (385 €/ Tag)\n\n3-Tagespreis Sommerfrische & Zeit der Rauhnächte: 1.470 € (490 €/ Tag)\n3-Tagespreis Winterruhe: 1.350 € (450 €/ Tag)",
         bottomImages: [ImageData(url: "Fishermans-Home3", title: nil),
                        ImageData(url: "Fishermans-Home4", title: nil),
                        ImageData(url: "Fishermans-Home5", title: nil),
@@ -72,6 +83,7 @@ let UnitDetails: [UnitDetailData] = [
     ),
    
     UnitDetailData(
+        type: .FishermansApartment,
         header: HeaderData(
             image: "Main Fishermans Apartment",
             title: "Fishermans Apartment",
@@ -79,7 +91,7 @@ let UnitDetails: [UnitDetailData] = [
             description: "Extravagant. Individuell. Farbenfroh. Loftartiges Wohn-Ess-Küchen-Zimmer auf 100 m2 mit großzügigem Balkon in Richtung Streuobstwiesen und Schilf-Flächen. Gemütliche Samt-Daybeds für die ganze Familie. Dekorative Fisch-Bilder und Seerosen aus Ton schmücken die Wände. Sunset."),
         topImages: [ImageData(url: "Fishermans-Apt1", title: nil),
                     ImageData(url: "Fishermans-Apt2", title: nil)],
-        info: "4–6 Personen / 170 qm Wohnfläche/ Dachgeschoss mit hohen Decken / Balkon in Richtung See\n\nLoftartige Wohnküche mit Wohnzimmer\n2 Schlafzimmer (inkl. je 1 „en suite“ Bad), Gästetoilette\n\nAufbettung 2 Personen möglich\n\nkein Aufzug\n\nWochenpreis Sommerfrische & Zeit der Rauhnächte: 3.150 € (450 €/ Tag)\n\nWochenpreis Winterruhe: 2.700 € (385 €/ Tag)\n\n3-Tagespreis Sommerfrische & Zeit der Rauhnächte: 1.470 € (490 €/ Tag)\n\n3-Tagespreis Winterruhe: 1.350 € (450 €/ Tag)",
+        info: "4–6 Personen / 170 qm Wohnfläche/ Dachgeschoss mit hohen Decken / Balkon in Richtung See\nLoftartige Wohnküche mit Wohnzimmer\n2 Schlafzimmer (inkl. je 1 „en suite“ Bad), Gästetoilette\nAufbettung 2 Personen möglich\nkein Aufzug\n\nWochenpreis Sommerfrische & Zeit der Rauhnächte: 3.150 € (450 €/ Tag)\nWochenpreis Winterruhe: 2.700 € (385 €/ Tag)\n\n3-Tagespreis Sommerfrische & Zeit der Rauhnächte: 1.470 € (490 €/ Tag)\n3-Tagespreis Winterruhe: 1.350 € (450 €/ Tag)",
         bottomImages: [ImageData(url: "Fishermans-Apt3", title: nil),
                        ImageData(url: "Fishermans-Apt4", title: nil),
                        ImageData(url: "Fishermans-Apt5", title: nil),
@@ -89,6 +101,7 @@ let UnitDetails: [UnitDetailData] = [
 
 class UnitDetailTableViewController: UITableViewController {
     var data: UnitDetailData?
+    var otherUnits: [UnitDetailData]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,16 +115,43 @@ class UnitDetailTableViewController: UITableViewController {
         tableView.allowsSelection = false
         self.navigationController?.isNavigationBarHidden = false
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setUpOtherUnits()
+    }
+    
+    func setUpOtherUnits() {
+        switch data?.type {
+        case .FarmersHome:
+            otherUnits = [UnitDetails[UnitType.FishermansHome.rawValue],
+                                             UnitDetails[UnitType.FishermansApartment.rawValue],
+                                             UnitDetails[UnitType.FarmersLoft.rawValue]]
+        case .FishermansHome:
+            otherUnits = [UnitDetails[UnitType.FarmersHome.rawValue],
+                            UnitDetails[UnitType.FishermansApartment.rawValue],
+                            UnitDetails[UnitType.FarmersLoft.rawValue]]
+        case .FishermansApartment:
+            otherUnits = [UnitDetails[UnitType.FarmersHome.rawValue],
+                            UnitDetails[UnitType.FishermansHome.rawValue],
+                            UnitDetails[UnitType.FarmersLoft.rawValue]]
+        case .FarmersLoft:
+            otherUnits = [UnitDetails[UnitType.FarmersHome.rawValue],
+                            UnitDetails[UnitType.FishermansHome.rawValue],
+                            UnitDetails[UnitType.FishermansApartment.rawValue]]
+        case .none:
+            break
+        }
+    }
 
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 7
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 1
     }
 
@@ -145,6 +185,7 @@ class UnitDetailTableViewController: UITableViewController {
             }
         case 5:
             if let cell = tableView.dequeueReusableCell(withIdentifier: OtherUnitsTableViewCell.shortClassName(), for: indexPath) as? OtherUnitsTableViewCell {
+                cell.populate(data: otherUnits)
                 return cell
             }
         case 6:

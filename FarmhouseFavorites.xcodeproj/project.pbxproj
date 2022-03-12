@@ -142,6 +142,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0117D65F27DD014600CE1909 /* Inquire */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Inquire;
+			sourceTree = "<group>";
+		};
 		014658AC27CB77C50076ECDF = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +224,7 @@
 		01F5D68F27CBA4F200E1CA0D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0117D65F27DD014600CE1909 /* Inquire */,
 				01F5D69B27CBE22D00E1CA0D /* Main */,
 				016FD0C827D5239A008A921B /* Menu Table */,
 				016FD0C927D526FD008A921B /* Reserve */,

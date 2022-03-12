@@ -15,7 +15,7 @@ class SecondImageTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let tapRecognizer = UITapGestureRecognizer(target: imageView1, action: #selector(onSelectedView(_:)))
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(onSelectedView(_:)))
         self.imageView1.addGestureRecognizer(tapRecognizer)
         self.selectionStyle = .none
 
@@ -34,7 +34,7 @@ class SecondImageTableViewCell: UITableViewCell {
         imageView4.image = UIImage(named: data.bottomImages[3].url)
     }
     
-    @objc func onSelectedView(_ sender: UIButton) {
+    @objc func onSelectedView(_ tapGesture: UITapGestureRecognizer) {
             print("Selected Image 1")
     }
 }

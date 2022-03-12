@@ -175,8 +175,14 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="view1" destination="pI6-Ui-luC" id="HXD-v7-wBe"/>
+                <outlet property="view1ImageView" destination="IXS-Jb-0oQ" id="K1p-GD-2wz"/>
+                <outlet property="view1Label" destination="Mv7-rI-eWm" id="6yR-96-W9j"/>
                 <outlet property="view2" destination="8yQ-P1-ToV" id="mUX-cA-KXV"/>
+                <outlet property="view2ImageView" destination="K71-ZE-0Wv" id="xNE-hS-uDc"/>
+                <outlet property="view2Label" destination="flL-Uk-nOP" id="fzM-jS-hjd"/>
                 <outlet property="view3" destination="QZg-EY-vro" id="uqs-WP-dw4"/>
+                <outlet property="view3ImageView" destination="33t-yZ-b9c" id="N3d-P9-d4S"/>
+                <outlet property="view3Label" destination="Ss6-79-Sz5" id="wh4-OZ-Kcm"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </tableViewCell>

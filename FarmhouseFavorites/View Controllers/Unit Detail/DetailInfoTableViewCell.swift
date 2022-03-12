@@ -30,5 +30,10 @@ class DetailInfoTableViewCell: UITableViewCell {
     func populate(data: UnitDetailData) {
         bodyLabel.text = data.info
     }
+ 
+    @IBAction func onInquire(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+    }
     
 }
