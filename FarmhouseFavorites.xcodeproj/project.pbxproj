@@ -38,6 +38,8 @@
 		0180BDEA27DAA2B8004B161E /* FooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDE827DAA2B8004B161E /* FooterTableViewCell.xib */; };
 		01E7A54F27DDD2950050E3A0 /* AreaInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E7A54D27DDD2950050E3A0 /* AreaInfoTableViewCell.swift */; };
 		01E7A55027DDD2950050E3A0 /* AreaInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E7A54E27DDD2950050E3A0 /* AreaInfoTableViewCell.xib */; };
+		01E7A55227DDF3140050E3A0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E7A55127DDDAF20050E3A0 /* WebViewController.swift */; };
+		01E7A55427DDF3DE0050E3A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E7A55327DDF3DE0050E3A0 /* Constants.swift */; };
 		01F5D69127CBA51100E1CA0D /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */; };
 		01F5D69327CBC55D00E1CA0D /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */; };
 		01F5D69827CBD71900E1CA0D /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01F5D69527CBCF4000E1CA0D /* LibreBaskerville-Italic.ttf */; };
@@ -106,6 +108,8 @@
 		0180BDE827DAA2B8004B161E /* FooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterTableViewCell.xib; sourceTree = "<group>"; };
 		01E7A54D27DDD2950050E3A0 /* AreaInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaInfoTableViewCell.swift; sourceTree = "<group>"; };
 		01E7A54E27DDD2950050E3A0 /* AreaInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaInfoTableViewCell.xib; sourceTree = "<group>"; };
+		01E7A55127DDDAF20050E3A0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		01E7A55327DDF3DE0050E3A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		01F5D69027CBA51100E1CA0D /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		01F5D69227CBC55D00E1CA0D /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		01F5D69527CBCF4000E1CA0D /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 			children = (
 				014658B827CB77C50076ECDF /* AppDelegate.swift */,
 				014658C427CB77C60076ECDF /* Assets.xcassets */,
+				01E7A55327DDF3DE0050E3A0 /* Constants.swift */,
 				01F5D6AA27CCBAE400E1CA0D /* Data */,
 				01F5D6A027CC9CC000E1CA0D /* Extensions */,
 				014658C127CB77C50076ECDF /* FarmhouseFavorites.xcdatamodeld */,
@@ -228,6 +233,7 @@
 		01F5D68F27CBA4F200E1CA0D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				01E7A55127DDDAF20050E3A0 /* WebViewController.swift */,
 				0117D65F27DD014600CE1909 /* Inquire */,
 				01F5D69B27CBE22D00E1CA0D /* Main */,
 				016FD0C827D5239A008A921B /* Menu Table */,
@@ -448,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				014658C327CB77C50076ECDF /* FarmhouseFavorites.xcdatamodeld in Sources */,
+				01E7A55227DDF3140050E3A0 /* WebViewController.swift in Sources */,
 				01F5D6AE27CCC39000E1CA0D /* PageVC.swift in Sources */,
 				0170360D27D0C8CD00573664 /* DetailTopImagesTableViewCell.swift in Sources */,
 				0170360927D0C0D200573664 /* DetailHeaderTableViewCell.swift in Sources */,
@@ -457,6 +464,7 @@
 				0123D66327D505E900D574BE /* MenuTableViewController.swift in Sources */,
 				01F5D6B027CCCA7F00E1CA0D /* PhotoAlbumPageVC.swift in Sources */,
 				0123D66527D5073300D574BE /* MenuTableViewCell.swift in Sources */,
+				01E7A55427DDF3DE0050E3A0 /* Constants.swift in Sources */,
 				0180BDDD27DA59A7004B161E /* SecondImageTableViewCell.swift in Sources */,
 				0180BDE527DA613C004B161E /* OtherUnitsTableViewCell.swift in Sources */,
 				016FD0CB27D52818008A921B /* ReserveViewController.swift in Sources */,

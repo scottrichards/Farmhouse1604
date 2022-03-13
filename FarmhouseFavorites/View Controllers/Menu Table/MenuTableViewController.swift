@@ -22,7 +22,7 @@ enum MoreMenuItems : Int, CaseIterable {
         case .info:
             return "Info"
         case .privacyPolicy:
-            return "Privacy"
+            return "Datenschutz"
         }
     }
     
@@ -43,7 +43,6 @@ class MenuTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     // MARK: - Table view data source
@@ -73,11 +72,21 @@ class MenuTableViewController: UITableViewController {
         let menuItem = menuItems[indexPath.row]
         switch menuItem {
         case .language: fallthrough
-        case .privacyPolicy: fallthrough
+        case .reserve: openURL(Constants.Urls.Booking)
+        case .privacyPolicy: openURL(Constants.Urls.Privacy)
         default:
             break
         }
         tableView.deselectRow(at: indexPath, animated: false)
     }
 
+    func openURL(_ urlString: String) {
+        if let url = URL(string: urlString) {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            if let webVC = storyBoard.instantiateViewController(withIdentifier: "WebVC") as? WebViewController {
+                webVC.url = url
+                self.navigationController?.pushViewController(webVC, animated: true)
+            }
+        }
+    }
 }

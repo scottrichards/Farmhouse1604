@@ -171,6 +171,7 @@ class UnitDetailTableViewController: UITableViewController {
             }
         case 2:
             if let cell = tableView.dequeueReusableCell(withIdentifier: DetailInfoTableViewCell.shortClassName(), for: indexPath) as? DetailInfoTableViewCell, let data = data {
+                cell.delegate = self
                 cell.populate(data: data)
                 return cell
             }
@@ -221,6 +222,13 @@ class UnitDetailTableViewController: UITableViewController {
         print("did select row at indexPath.section: \(indexPath.section) row: \(indexPath.row)")
     }
 
+    func doInquiry() {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        if let webVC = storyBoard.instantiateViewController(withIdentifier: "webVC") as? WebViewController {
+            webVC.url = URL(string: Constants.Urls.Booking)
+            self.navigationController?.pushViewController(webVC, animated: true)
+        }
+    }
 }
 
 
@@ -235,4 +243,16 @@ extension UnitDetailTableViewController: OtherUnitsTableViewCellDelegate {
     func scrollToFirstRow() {
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)    }
+}
+
+extension UnitDetailTableViewController: DetailInfoTableViewCellDelegate {
+    func openURL(string: String) {
+        if let url = URL(string: string) {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            if let webVC = storyBoard.instantiateViewController(withIdentifier: "WebVC") as? WebViewController {
+                webVC.url = url
+                self.navigationController?.pushViewController(webVC, animated: true)
+            }
+        }
+    }
 }

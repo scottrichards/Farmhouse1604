@@ -7,11 +7,16 @@
 
 import UIKit
 
+protocol DetailInfoTableViewCellDelegate: AnyObject {
+    func openURL(string: String)
+}
+
 class DetailInfoTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     @IBOutlet weak var inquireButton: UIButton!
     var data: UnitDetailData?
+    weak var delegate: DetailInfoTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,8 +37,7 @@ class DetailInfoTableViewCell: UITableViewCell {
     }
  
     @IBAction func onInquire(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
+        delegate?.openURL(string: Constants.Urls.Booking)
     }
     
 }
