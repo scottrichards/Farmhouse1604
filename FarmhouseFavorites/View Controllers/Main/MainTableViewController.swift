@@ -15,7 +15,11 @@ struct MainTableCellData {
     let description: String
 }
 
-
+enum MainSections: Int, CaseIterable {
+    case Units
+    case Map
+    case Footer
+}
 
 class MainTableViewController: UITableViewController {
     let mainTableDataArray = [
@@ -35,6 +39,9 @@ class MainTableViewController: UITableViewController {
         tableView.tableHeaderView = headerView
         self.tableView.updateConstraintsIfNeeded()
         tableView.tableHeaderView?.updateConstraints()
+        
+        tableView.registerNib(forType: FooterTableViewCell.self)
+        tableView.registerNib(forType: AreaInfoTableViewCell.self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,40 +52,59 @@ class MainTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return MainSections.allCases.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mainTableDataArray.count
+        switch section {
+        case MainSections.Units.rawValue: return mainTableDataArray.count
+        case MainSections.Map.rawValue: return 1
+        case MainSections.Footer.rawValue: return 1
+        default: return 0
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath)
+        switch indexPath.section {
+        case MainSections.Units.rawValue:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath)
+            
+            if let mainTableViewCell = cell as? MainTableViewCell, indexPath.row < mainTableDataArray.count {
+                let unitData = mainTableDataArray[indexPath.row]
+                mainTableViewCell.populate(data: unitData)
+            } else {
+                cell.textLabel?.text = nil
+            }
 
-        if let mainTableViewCell = cell as? MainTableViewCell, indexPath.row < mainTableDataArray.count {
-            let unitData = mainTableDataArray[indexPath.row]
-            mainTableViewCell.populate(data: unitData)
-        } else {
-            cell.textLabel?.text = nil
+            return cell
+        case MainSections.Map.rawValue:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AreaInfoTableViewCell", for: indexPath)
+            cell.selectionStyle = .none
+            return cell
+        case MainSections.Footer.rawValue:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FooterTableViewCell", for: indexPath)
+            return cell
+        default:
+            return UITableViewCell()
         }
-
-        return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 0 {
-            return UITableView.automaticDimension
-        } else {
-            return 400.0
-        }
+        return UITableView.automaticDimension
+//        if indexPath.section == 0 {
+//            return UITableView.automaticDimension
+//        } else {
+//            return 400.0
+//        }
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 0 {
-            return UITableView.automaticDimension
-        } else {
-            return 400.0
-        }
+        return UITableView.automaticDimension
+//        if indexPath.section == 0 {
+//            return UITableView.automaticDimension
+//        } else {
+//            return 400.0
+//        }
     }
 
     
@@ -92,6 +118,9 @@ class MainTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.section == MainSections.Units.rawValue else {
+            return
+        }
         if indexPath.row < UnitDetails.count {
             let unitData = UnitDetails[indexPath.row]
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)

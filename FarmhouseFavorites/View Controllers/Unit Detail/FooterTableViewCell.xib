@@ -123,6 +123,7 @@
                     <constraint firstItem="DLu-3M-v1p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cGV-Ht-lDT"/>
                     <constraint firstItem="brg-c2-QPk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="dOc-Kk-Cib"/>
                     <constraint firstItem="DLu-3M-v1p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="n5P-1e-5QP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="brg-c2-QPk" secondAttribute="bottom" constant="0.5" id="p8a-HT-iXV"/>
                     <constraint firstAttribute="trailingMargin" secondItem="brg-c2-QPk" secondAttribute="trailing" id="qc5-LU-rOz"/>
                     <constraint firstItem="Sit-qG-53K" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="snh-CW-kMl"/>
                     <constraint firstItem="DLu-3M-v1p" firstAttribute="top" secondItem="Sit-qG-53K" secondAttribute="bottom" constant="12" id="sqy-qZ-EQu"/>
