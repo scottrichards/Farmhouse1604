@@ -9,6 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var scrollingHeaderView: ScrollingTableHeaderView!
     
     let mainTableDataArray = [
         MainTableCellData(image: "Main Farmers Home", title: "Farmers Home", quote: "“Walk to the lake”", info: "190 qm für 6 Personen", description: "Denkmalgeschützter Steintrakt auf zwei Etagen mit Terrasse"),
@@ -23,6 +24,7 @@ class MainViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         tableView.delegate = self
         tableView.dataSource = self
+        scrollingHeaderView.delegate = self
         tableView.registerNib(forType: UnitTableViewCell.self)
         tableView.registerNib(forType: FooterTableViewCell.self)
         tableView.registerNib(forType: AreaInfoTableViewCell.self)
@@ -119,6 +121,17 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
                 unitDetailVC.data = unitData
                 self.navigationController?.pushViewController(unitDetailVC, animated: true)
             }
+        }
+    }
+}
+
+
+extension MainViewController: ScrollingTableHeaderDelegate {
+    func onOpenMenu() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        if let menuVC = storyBoard.instantiateViewController(withIdentifier: "MenuTableVC") as? MenuTableViewController {
+            self.navigationController?.isNavigationBarHidden = false
+            self.navigationController?.pushViewController(menuVC, animated: true)
         }
     }
 }

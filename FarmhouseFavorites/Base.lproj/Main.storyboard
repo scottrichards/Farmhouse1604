@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngO-yn-PaL">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngO-yn-PaL" customClass="ScrollingTableHeaderView" customModule="FarmhouseFavorites" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="390" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oav-ov-rBc">
@@ -39,6 +39,9 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button" image="Menu"/>
+                                        <connections>
+                                            <action selector="onOpenMenu:" destination="ngO-yn-PaL" eventType="touchUpInside" id="AR6-a2-2AQ"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="8Dz-Xa-jBI">
                                         <rect key="frame" x="155" y="15" width="80" height="80"/>
@@ -75,6 +78,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cGh-Eb-Br2"/>
                     <connections>
+                        <outlet property="scrollingHeaderView" destination="ngO-yn-PaL" id="oRd-mI-xxh"/>
                         <outlet property="tableView" destination="iDX-Ej-Cuy" id="Wvs-D2-lpL"/>
                     </connections>
                 </viewController>
@@ -355,14 +359,14 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
         <scene sceneID="F0C-g2-wNr">
             <objects>
                 <viewController id="4cb-lk-8eb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4SC-Gm-FvX">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="4SC-Gm-FvX">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KEC-mh-HA6">
                                 <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="703-3w-VmV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="703-3w-VmV">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="766"/>
                                     </stackView>
                                 </subviews>
@@ -395,7 +399,7 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
         <!--Menu Table View Controller-->
         <scene sceneID="7sO-1O-KGQ">
             <objects>
-                <tableViewController id="fvG-jF-mvu" customClass="MenuTableViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MenuTableVC" id="fvG-jF-mvu" customClass="MenuTableViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ptm-as-NWx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

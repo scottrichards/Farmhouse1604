@@ -7,8 +7,15 @@
 
 import UIKit
 
-class ScrollingTableHeaderView: NibView {
+protocol ScrollingTableHeaderDelegate: AnyObject {
+    func onOpenMenu()
+}
 
+class ScrollingTableHeaderView: UIView {
+    weak var delegate: ScrollingTableHeaderDelegate?
 
-
+    @IBAction func onOpenMenu(_ sender: Any) {
+        delegate?.onOpenMenu()
+    }
+    
 }
