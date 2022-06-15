@@ -274,6 +274,8 @@
 				01515DEB2859D1B200AB6BA3 /* ScrollingTableHeaderView.swift */,
 				01515DEF285A15C300AB6BA3 /* UnitTableViewCell.swift */,
 				01515DF0285A15C300AB6BA3 /* UnitTableViewCell.xib */,
+				0180BDE727DAA2B8004B161E /* FooterTableViewCell.swift */,
+				0180BDE827DAA2B8004B161E /* FooterTableViewCell.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -301,8 +303,6 @@
 				0123D65727D4D79C00D574BE /* DetailInfoTableViewCell.xib */,
 				0170360B27D0C8CD00573664 /* DetailTopImagesTableViewCell.swift */,
 				0170360C27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib */,
-				0180BDE727DAA2B8004B161E /* FooterTableViewCell.swift */,
-				0180BDE827DAA2B8004B161E /* FooterTableViewCell.xib */,
 				0180BDE327DA613C004B161E /* OtherUnitsTableViewCell.swift */,
 				0180BDE427DA613C004B161E /* OtherUnitsTableViewCell.xib */,
 				01F5D6AD27CCC39000E1CA0D /* PageVC.swift */,

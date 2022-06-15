@@ -20,4 +20,13 @@ class FooterTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func onSendEmail(_ sender: Any) {
+        if let url = URL(string: "mailto:\(Constants.email.info)") {
+          if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url)
+          } else {
+            UIApplication.shared.openURL(url)
+          }
+        }
+    }
 }

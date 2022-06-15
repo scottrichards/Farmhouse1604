@@ -13,4 +13,8 @@ struct Constants {
         static let Booking = "https://farmhouse1604.com/anfrage-buchung-farmhouse.html"
         static let Privacy = "https://farmhouse1604.com/datenschutz.html"
     }
+    
+    struct email {
+        static let info = "info@farmhouse1604.de"
+    }
 }
