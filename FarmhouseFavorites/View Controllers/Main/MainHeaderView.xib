@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainHeaderView" customModule="FarmhouseFavorites" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainHeaderView" customModule="FarmhouseFavorites" customModuleProvider="target">
+            <connections>
+                <outlet property="menuButton" destination="ciP-Gu-RoT" id="hM0-Fh-VC6"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -17,14 +22,17 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vv1-dF-MPw">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                     <subviews>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciP-Gu-RoT">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciP-Gu-RoT">
                             <rect key="frame" x="40" y="40" width="30" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="NDi-hR-f6c"/>
                                 <constraint firstAttribute="height" constant="30" id="dx3-fn-v1R"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="Menu"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button" image="Menu"/>
+                            <connections>
+                                <action selector="onMenu:" destination="-1" eventType="touchUpInside" id="if5-me-kkS"/>
+                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ygF-5Q-sBk">
                             <rect key="frame" x="167" y="15" width="80" height="80"/>
@@ -39,7 +47,6 @@
                         <constraint firstItem="ciP-Gu-RoT" firstAttribute="top" secondItem="vv1-dF-MPw" secondAttribute="top" constant="40" id="645-zI-Nde"/>
                         <constraint firstAttribute="bottom" secondItem="ciP-Gu-RoT" secondAttribute="bottom" constant="40" id="6SM-ht-fcK"/>
                         <constraint firstItem="ygF-5Q-sBk" firstAttribute="centerX" secondItem="vv1-dF-MPw" secondAttribute="centerX" id="Mwl-vS-0V5"/>
-                        <constraint firstItem="ygF-5Q-sBk" firstAttribute="leading" secondItem="vv1-dF-MPw" secondAttribute="leading" constant="167" id="OkU-wB-oOS"/>
                         <constraint firstAttribute="bottom" secondItem="ygF-5Q-sBk" secondAttribute="bottom" constant="15" id="UCx-Mb-UHI"/>
                         <constraint firstAttribute="height" constant="110" id="ea8-jS-o1E"/>
                         <constraint firstItem="ygF-5Q-sBk" firstAttribute="top" secondItem="vv1-dF-MPw" secondAttribute="top" constant="15" id="kTV-Ey-twz"/>

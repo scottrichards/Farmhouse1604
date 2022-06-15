@@ -33,12 +33,7 @@ class MainTableViewController: UITableViewController {
         super.viewDidLoad()
         // Hide the navigation bar
         self.navigationController?.isNavigationBarHidden = true
-        let headerFrame =  CGRect(x: 0, y: 0, width: self.view.frame.width, height: 110.0)
-        print("headerFrame: \(headerFrame)")
-        let headerView = MainHeaderView(frame: headerFrame)
-        tableView.tableHeaderView = headerView
-        self.tableView.updateConstraintsIfNeeded()
-        tableView.tableHeaderView?.updateConstraints()
+
         
         tableView.registerNib(forType: FooterTableViewCell.self)
         tableView.registerNib(forType: AreaInfoTableViewCell.self)
@@ -47,6 +42,13 @@ class MainTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
+        let headerFrame =  CGRect(x: 0, y: 0, width: self.view.frame.width, height: 110.0)
+        print("headerFrame: \(headerFrame)")
+        let headerView = MainHeaderView(frame: headerFrame)
+        headerView.translatesAutoresizingMaskIntoConstraints = true
+        tableView.tableHeaderView = headerView
+        self.tableView.updateConstraintsIfNeeded()
+        tableView.tableHeaderView?.updateConstraints()
     }
 
     // MARK: - Table view data source

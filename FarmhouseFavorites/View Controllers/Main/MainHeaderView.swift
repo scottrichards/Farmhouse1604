@@ -7,8 +7,14 @@
 
 import UIKit
 
-class MainHeaderView: NibView {
+protocol MainHeaderViewDelegate: AnyObject {
+    func onOpenMenu()
+}
 
+class MainHeaderView: NibView {
+    @IBOutlet weak var menuButton: UIButton!
+    weak var delegate: MainHeaderViewDelegate?
+    
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
@@ -16,5 +22,8 @@ class MainHeaderView: NibView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    @IBAction func onMenu(_ sender: Any) {
     }
 }
