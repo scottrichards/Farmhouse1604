@@ -38,7 +38,6 @@
                         </state>
                         <connections>
                             <action selector="onCallWhatsApp:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="C99-PS-nE0"/>
-                            <action selector="onSendEmail:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gUv-YI-MRF"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(bitte schreiben Sie uns eine Nachricht - wir rufen auf Wunsch sehr gerne zurück)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-uY-dv3">

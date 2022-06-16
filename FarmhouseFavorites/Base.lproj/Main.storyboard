@@ -9,12 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="LibreBaskerville-Bold.ttf">
-            <string>LibreBaskerville-Bold</string>
-        </array>
-        <array key="LibreBaskerville-Italic.ttf">
-            <string>LibreBaskerville-Italic</string>
-        </array>
         <array key="LibreBaskerville-Regular.ttf">
             <string>LibreBaskerville-Regular</string>
         </array>
@@ -59,7 +53,7 @@
                                     <constraint firstItem="8Dz-Xa-jBI" firstAttribute="centerX" secondItem="ngO-yn-PaL" secondAttribute="centerX" id="udQ-bS-Nt1"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iDX-Ej-Cuy">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iDX-Ej-Cuy">
                                 <rect key="frame" x="0.0" y="198" width="390" height="612"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -84,102 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Un-XA-4Da" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2826.1538461538462" y="-399.52606635071089"/>
-        </scene>
-        <!--Main Table View Controller-->
-        <scene sceneID="TtO-0b-MUu">
-            <objects>
-                <tableViewController id="ZDK-PA-Azg" customClass="MainTableViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="400" estimatedRowHeight="400" sectionHeaderHeight="28" estimatedSectionHeaderHeight="110" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" id="UUj-KQ-vQY">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainTableViewCell" rowHeight="400" id="VjG-zt-Das" customClass="MainTableViewCell" customModule="FarmhouseFavorites" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="400"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VjG-zt-Das" id="xba-Xa-p7k">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="400"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPF-iJ-mC2">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="166"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="iPF-iJ-mC2" secondAttribute="height" multiplier="195:83" id="mZb-29-s9b"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Farmers Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW8-AG-EXy">
-                                            <rect key="frame" x="20" y="181" width="350" height="30"/>
-                                            <fontDescription key="fontDescription" name="LibreBaskerville-Bold" family="Libre Baskerville" pointSize="24"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" text="Denkmalgeschützter Steintrakt auf zwei Etagen mit Terrasse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whL-f5-o2l">
-                                            <rect key="frame" x="20" y="264.66666666666669" width="350" height="35"/>
-                                            <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="190 qm für 6 Personen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-V3-s1r">
-                                            <rect key="frame" x="20" y="229" width="350" height="17.666666666666657"/>
-                                            <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="zum apartment →" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0D-oN-7SN">
-                                            <rect key="frame" x="20" y="351.33333333333326" width="129.33333333333334" height="17.666666666666686"/>
-                                            <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="&quot;Enjoy the sunrise&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrL-6M-LM2">
-                                            <rect key="frame" x="20" y="316" width="350" height="18.666666666666629"/>
-                                            <fontDescription key="fontDescription" name="LibreBaskerville-Italic" family="Libre Baskerville" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="k0D-oN-7SN" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="1fg-At-KX6"/>
-                                        <constraint firstItem="k0D-oN-7SN" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="7Dy-nY-Ych"/>
-                                        <constraint firstItem="cW8-AG-EXy" firstAttribute="trailing" secondItem="xba-Xa-p7k" secondAttribute="trailingMargin" id="7Kv-SJ-vtN"/>
-                                        <constraint firstItem="whL-f5-o2l" firstAttribute="trailing" secondItem="xba-Xa-p7k" secondAttribute="trailingMargin" id="Bbt-Sp-PUL"/>
-                                        <constraint firstItem="iPF-iJ-mC2" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leading" id="FSu-gF-hBz"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="k0D-oN-7SN" secondAttribute="bottom" constant="20" id="IYm-1n-8p1"/>
-                                        <constraint firstItem="WrL-6M-LM2" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="JH0-CN-fAT"/>
-                                        <constraint firstItem="cW8-AG-EXy" firstAttribute="top" secondItem="iPF-iJ-mC2" secondAttribute="bottom" constant="15" id="JpQ-Gs-OR4"/>
-                                        <constraint firstItem="whL-f5-o2l" firstAttribute="top" secondItem="MLy-V3-s1r" secondAttribute="bottom" constant="18" id="NgA-dG-IEk"/>
-                                        <constraint firstAttribute="trailing" secondItem="iPF-iJ-mC2" secondAttribute="trailing" id="Ojj-h3-itm"/>
-                                        <constraint firstItem="whL-f5-o2l" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="P8T-MU-dWq"/>
-                                        <constraint firstItem="WrL-6M-LM2" firstAttribute="top" secondItem="whL-f5-o2l" secondAttribute="bottom" constant="16.329999999999998" id="VEQ-ed-A18"/>
-                                        <constraint firstItem="cW8-AG-EXy" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="aU6-k9-g17"/>
-                                        <constraint firstItem="k0D-oN-7SN" firstAttribute="top" secondItem="WrL-6M-LM2" secondAttribute="bottom" constant="16.670000000000002" id="cBW-ih-UVY"/>
-                                        <constraint firstItem="MLy-V3-s1r" firstAttribute="leading" secondItem="xba-Xa-p7k" secondAttribute="leadingMargin" id="k4G-bi-8gA"/>
-                                        <constraint firstItem="MLy-V3-s1r" firstAttribute="top" secondItem="cW8-AG-EXy" secondAttribute="bottom" constant="18" id="ka8-qc-uGP"/>
-                                        <constraint firstItem="WrL-6M-LM2" firstAttribute="trailing" secondItem="xba-Xa-p7k" secondAttribute="trailingMargin" id="svy-wb-jgg"/>
-                                        <constraint firstItem="iPF-iJ-mC2" firstAttribute="top" secondItem="xba-Xa-p7k" secondAttribute="top" id="tTf-4M-uSA"/>
-                                        <constraint firstItem="MLy-V3-s1r" firstAttribute="trailing" secondItem="xba-Xa-p7k" secondAttribute="trailingMargin" id="uzV-Q2-CzA"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="descriptionLabel" destination="whL-f5-o2l" id="FmV-WE-MfK"/>
-                                    <outlet property="imageView" destination="iPF-iJ-mC2" id="n8g-Ln-DA3"/>
-                                    <outlet property="infoLabel" destination="MLy-V3-s1r" id="9gB-Xd-o8q"/>
-                                    <outlet property="pictureImageView" destination="iPF-iJ-mC2" id="dpx-p6-sWm"/>
-                                    <outlet property="quoteLabel" destination="WrL-6M-LM2" id="3D2-FI-z1f"/>
-                                    <outlet property="titleLabel" destination="cW8-AG-EXy" id="8Qo-to-K9P"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ZDK-PA-Azg" id="bqB-Ab-cTT"/>
-                            <outlet property="delegate" destination="ZDK-PA-Azg" id="Vm3-RN-arq"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="zPn-6V-9Pr"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ocr-9q-o7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1898" y="253"/>
+            <point key="canvasLocation" x="2802" y="69"/>
         </scene>
         <!--Unit Detail View Controller-->
         <scene sceneID="NsQ-CP-Lu4">
@@ -355,47 +254,6 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
             </objects>
             <point key="canvasLocation" x="1921.5384615384614" y="943.3649289099526"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="F0C-g2-wNr">
-            <objects>
-                <viewController id="4cb-lk-8eb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="4SC-Gm-FvX">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KEC-mh-HA6">
-                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="703-3w-VmV">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="766"/>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="703-3w-VmV" firstAttribute="trailing" secondItem="pkN-QX-GLe" secondAttribute="trailing" id="BiZ-PU-wk0"/>
-                                    <constraint firstItem="703-3w-VmV" firstAttribute="leading" secondItem="pkN-QX-GLe" secondAttribute="leading" id="Noj-dN-Gcf"/>
-                                    <constraint firstItem="703-3w-VmV" firstAttribute="bottom" secondItem="pkN-QX-GLe" secondAttribute="bottom" id="TxF-ai-oPE"/>
-                                    <constraint firstItem="703-3w-VmV" firstAttribute="top" secondItem="pkN-QX-GLe" secondAttribute="top" id="X7z-yp-ig9"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="7UP-xJ-EG5"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="pkN-QX-GLe"/>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="8na-jd-9XU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="KEC-mh-HA6" firstAttribute="trailing" secondItem="8na-jd-9XU" secondAttribute="trailing" id="6xn-H7-uBs"/>
-                            <constraint firstItem="KEC-mh-HA6" firstAttribute="leading" secondItem="8na-jd-9XU" secondAttribute="leading" id="Uli-rw-z56"/>
-                            <constraint firstItem="KEC-mh-HA6" firstAttribute="bottom" secondItem="8na-jd-9XU" secondAttribute="bottom" id="fSR-te-yBq"/>
-                            <constraint firstItem="KEC-mh-HA6" firstAttribute="top" secondItem="8na-jd-9XU" secondAttribute="top" id="p7R-Ca-zDi"/>
-                            <constraint firstItem="703-3w-VmV" firstAttribute="width" secondItem="4SC-Gm-FvX" secondAttribute="width" id="voF-fy-iNH"/>
-                            <constraint firstItem="703-3w-VmV" firstAttribute="height" secondItem="4SC-Gm-FvX" secondAttribute="height" multiplier="0.907583" id="wIH-Zu-txC"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MAc-ad-wEe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2786.1538461538462" y="951.89573459715632"/>
-        </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="7sO-1O-KGQ">
             <objects>
@@ -420,7 +278,7 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wka-YQ-gmq">
-                                            <rect key="frame" x="209.33333333333337" y="20" width="136" height="20"/>
+                                            <rect key="frame" x="209.33333333333337" y="20.666666666666664" width="136" height="18.666666666666664"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="136" id="pS3-ST-D60"/>
                                             </constraints>
@@ -486,7 +344,7 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdJ-u3-THx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1896.9230769230769" y="-399.52606635071089"/>
+            <point key="canvasLocation" x="1872" y="69"/>
         </scene>
     </scenes>
     <resources>
