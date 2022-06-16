@@ -145,10 +145,17 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             return nil
         }
         if let mainSection = MainSections(rawValue: section) {
+            guard section < sectionHeaderData.count else {
+                return nil
+            }
             let sectionInfo = sectionHeaderData[section]
             switch mainSection {
             case .Units:
-                return nil
+                guard let amenititySectionHeader = tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: AmenitySectionHeader.self)) as? AmenitySectionHeader else {
+                    return nil
+                }
+                amenititySectionHeader.populate(data: sectionInfo)
+                return amenititySectionHeader
             case .Amenities:
                 guard let amenititySectionHeader = tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: AmenitySectionHeader.self)) as? AmenitySectionHeader else {
                     return nil

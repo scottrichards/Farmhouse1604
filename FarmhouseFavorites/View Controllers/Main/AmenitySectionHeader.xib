@@ -20,13 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Ausstattung" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYX-3s-BqQ">
-                    <rect key="frame" x="147" y="26" width="120" height="25"/>
-                    <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="20"/>
-                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jedes Apartment verfügt über folgende Ausstattung:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjj-Vd-Nsb">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Jedes Apartment verfügt über folgende Ausstattung:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjj-Vd-Nsb">
                     <rect key="frame" x="22.5" y="87" width="369" height="18"/>
                     <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,18 +33,24 @@
                         <constraint firstAttribute="height" constant="1" id="YIs-7n-zfp"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Ausstattung" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYX-3s-BqQ">
+                    <rect key="frame" x="135" y="22" width="144" height="30"/>
+                    <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="24"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="aYX-3s-BqQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="2SY-Qd-V4Y"/>
                 <constraint firstItem="PKg-fX-r9b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="AL0-4G-ivy"/>
-                <constraint firstItem="aYX-3s-BqQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PPq-Zb-An9"/>
+                <constraint firstItem="PKg-fX-r9b" firstAttribute="top" secondItem="aYX-3s-BqQ" secondAttribute="bottom" constant="15" id="Ofb-lN-gFQ"/>
                 <constraint firstItem="wjj-Vd-Nsb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pe8-VZ-nKM"/>
                 <constraint firstAttribute="trailing" secondItem="PKg-fX-r9b" secondAttribute="trailing" constant="20" symbolic="YES" id="fbk-z8-gIB"/>
-                <constraint firstItem="PKg-fX-r9b" firstAttribute="top" secondItem="aYX-3s-BqQ" secondAttribute="bottom" constant="16" id="hWs-Tf-j2g"/>
+                <constraint firstItem="aYX-3s-BqQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="mOr-gL-mae"/>
                 <constraint firstItem="wjj-Vd-Nsb" firstAttribute="top" secondItem="PKg-fX-r9b" secondAttribute="bottom" constant="19" id="rG2-Bw-JCg"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wjj-Vd-Nsb" secondAttribute="bottom" constant="45" id="v7l-5u-jIN"/>
+                <constraint firstItem="aYX-3s-BqQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wmf-Wu-63G"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
