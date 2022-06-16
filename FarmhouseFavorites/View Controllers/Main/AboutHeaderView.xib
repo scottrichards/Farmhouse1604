@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LibreBaskerville-Regular.ttf">
+            <string>LibreBaskerville-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutHeaderView" customModule="FarmhouseFavorites" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="AboutHeaderView" customModule="FarmhouseFavorites" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AerialOfHouse" translatesAutoresizingMaskIntoConstraints="NO" id="jGn-aF-3cB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jGn-aF-3cB" secondAttribute="height" multiplier="207:98" id="h16-l5-Zem"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f76-Ml-mWG">
+                    <rect key="frame" x="0.0" y="196" width="414" height="304"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mch-xk-rva">
+                            <rect key="frame" x="19" y="19" width="376" height="267"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Farmhouse 1604" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNe-HK-h2P">
+                                    <rect key="frame" x="86.5" y="8" width="203" height="30"/>
+                                    <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="24"/>
+                                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wor-Ow-6Ik">
+                                    <rect key="frame" x="168" y="50" width="40" height="1"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="EET-yc-wh9"/>
+                                        <constraint firstAttribute="width" constant="40" id="dzO-ws-mUa"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvv-gn-KEN">
+                                    <rect key="frame" x="20" y="68" width="336" height="182"/>
+                                    <string key="text">Das Farmhouse 1604 liegt mit seinen vier großzügigen Ferienwohnungen im Seethal – im Tal hinter dem Chiemsee.
+
+Der Grundstein für das Farmhouse wurde bereits 1604 gesetzt.
+
+Ursprünglich war dieses denkmalgeschützte Steinhaus das Bauernhaus eines Chiemsee-Fischers.</string>
+                                    <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="14"/>
+                                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <constraints>
+                                <constraint firstItem="wor-Ow-6Ik" firstAttribute="centerX" secondItem="mch-xk-rva" secondAttribute="centerX" id="4wS-zz-Asx"/>
+                                <constraint firstItem="wor-Ow-6Ik" firstAttribute="top" secondItem="BNe-HK-h2P" secondAttribute="bottom" constant="12" id="7ek-vV-jZu"/>
+                                <constraint firstItem="wor-Ow-6Ik" firstAttribute="top" secondItem="BNe-HK-h2P" secondAttribute="bottom" constant="12" id="AsA-bB-vTY"/>
+                                <constraint firstItem="BNe-HK-h2P" firstAttribute="top" secondItem="mch-xk-rva" secondAttribute="top" constant="8" id="DkM-DR-GxE"/>
+                                <constraint firstItem="Kvv-gn-KEN" firstAttribute="leading" secondItem="mch-xk-rva" secondAttribute="leading" constant="20" id="FMg-7i-uC6"/>
+                                <constraint firstAttribute="bottom" secondItem="Kvv-gn-KEN" secondAttribute="bottom" constant="17" id="JOS-FY-Irw"/>
+                                <constraint firstItem="Kvv-gn-KEN" firstAttribute="top" secondItem="wor-Ow-6Ik" secondAttribute="bottom" constant="17" id="NJ0-ex-9Tg"/>
+                                <constraint firstItem="BNe-HK-h2P" firstAttribute="centerX" secondItem="mch-xk-rva" secondAttribute="centerX" id="e0e-et-AdX"/>
+                                <constraint firstAttribute="trailing" secondItem="Kvv-gn-KEN" secondAttribute="trailing" constant="20" id="tlt-1Z-bLe"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="mch-xk-rva" firstAttribute="top" secondItem="f76-Ml-mWG" secondAttribute="top" constant="19" id="2UK-R2-fjA"/>
+                        <constraint firstItem="mch-xk-rva" firstAttribute="leading" secondItem="f76-Ml-mWG" secondAttribute="leading" constant="19" id="SZG-5r-bIu"/>
+                        <constraint firstAttribute="trailing" secondItem="mch-xk-rva" secondAttribute="trailing" constant="19" id="fHq-Qx-fBy"/>
+                        <constraint firstAttribute="bottom" secondItem="mch-xk-rva" secondAttribute="bottom" constant="18" id="z8a-d1-JaX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="f76-Ml-mWG" secondAttribute="trailing" id="TI6-Wv-2jf"/>
+                <constraint firstItem="f76-Ml-mWG" firstAttribute="top" secondItem="jGn-aF-3cB" secondAttribute="bottom" id="ab4-gT-isB"/>
+                <constraint firstItem="jGn-aF-3cB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="d7q-5y-Evm"/>
+                <constraint firstItem="jGn-aF-3cB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gHc-hy-6K5"/>
+                <constraint firstAttribute="bottom" secondItem="f76-Ml-mWG" secondAttribute="bottom" id="leb-g2-e6g"/>
+                <constraint firstItem="f76-Ml-mWG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mAo-Y1-HlY"/>
+                <constraint firstAttribute="trailing" secondItem="jGn-aF-3cB" secondAttribute="trailing" id="ubm-bb-9L6"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="Kvv-gn-KEN" id="gNh-wO-fnD"/>
+                <outlet property="textBorderView" destination="f76-Ml-mWG" id="ZzX-Ru-bI6"/>
+                <outlet property="titleLabel" destination="BNe-HK-h2P" id="aVs-1p-J6d"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="110.49107142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AerialOfHouse" width="1600" height="1066"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

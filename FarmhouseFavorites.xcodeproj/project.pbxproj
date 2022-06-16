@@ -23,6 +23,10 @@
 		014658DF27CB77C60076ECDF /* FarmhouseFavoritesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014658DE27CB77C60076ECDF /* FarmhouseFavoritesUITestsLaunchTests.swift */; };
 		01506463285B227E00703CDE /* AmenitySectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01506462285B227E00703CDE /* AmenitySectionHeader.swift */; };
 		01506465285B22D900703CDE /* AmenitySectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01506464285B22D900703CDE /* AmenitySectionHeader.xib */; };
+		0150646D285B4E4C00703CDE /* AboutHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0150646C285B4E4C00703CDE /* AboutHeaderView.swift */; };
+		0150646F285B4E5900703CDE /* AboutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0150646E285B4E5900703CDE /* AboutHeaderView.xib */; };
+		01506471285B564400703CDE /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01506470285B564400703CDE /* Styles.swift */; };
+		01506473285B56B800703CDE /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01506472285B56B800703CDE /* UIColor+.swift */; };
 		01515DEA2859CF5300AB6BA3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01515DE92859CF5300AB6BA3 /* MainViewController.swift */; };
 		01515DEC2859D1B200AB6BA3 /* ScrollingTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01515DEB2859D1B200AB6BA3 /* ScrollingTableHeaderView.swift */; };
 		01515DF1285A15C300AB6BA3 /* UnitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01515DEF285A15C300AB6BA3 /* UnitTableViewCell.swift */; };
@@ -100,6 +104,10 @@
 		014658DE27CB77C60076ECDF /* FarmhouseFavoritesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmhouseFavoritesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01506462285B227E00703CDE /* AmenitySectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenitySectionHeader.swift; sourceTree = "<group>"; };
 		01506464285B22D900703CDE /* AmenitySectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmenitySectionHeader.xib; sourceTree = "<group>"; };
+		0150646C285B4E4C00703CDE /* AboutHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHeaderView.swift; sourceTree = "<group>"; };
+		0150646E285B4E5900703CDE /* AboutHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutHeaderView.xib; sourceTree = "<group>"; };
+		01506470285B564400703CDE /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		01506472285B56B800703CDE /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		01515DE92859CF5300AB6BA3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		01515DEB2859D1B200AB6BA3 /* ScrollingTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingTableHeaderView.swift; sourceTree = "<group>"; };
 		01515DEF285A15C300AB6BA3 /* UnitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTableViewCell.swift; sourceTree = "<group>"; };
@@ -206,6 +214,7 @@
 				014658BE27CB77C50076ECDF /* Main.storyboard */,
 				014658BA27CB77C50076ECDF /* SceneDelegate.swift */,
 				01F5D68F27CBA4F200E1CA0D /* View Controllers */,
+				01506470285B564400703CDE /* Styles.swift */,
 			);
 			path = FarmhouseFavorites;
 			sourceTree = "<group>";
@@ -270,6 +279,8 @@
 		01F5D69B27CBE22D00E1CA0D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0150646C285B4E4C00703CDE /* AboutHeaderView.swift */,
+				0150646E285B4E5900703CDE /* AboutHeaderView.xib */,
 				01515DF5285A51DC00AB6BA3 /* AmenitiesTableViewCell.swift */,
 				01515DF6285A51DC00AB6BA3 /* AmenitiesTableViewCell.xib */,
 				01506462285B227E00703CDE /* AmenitySectionHeader.swift */,
@@ -297,6 +308,7 @@
 				0170360127D0BFC600573664 /* UITableView+.swift */,
 				01F5D6A327CC9CF800E1CA0D /* UIView+.swift */,
 				0123D66627D50FF600D574BE /* UIStackView+.swift */,
+				01506472285B56B800703CDE /* UIColor+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -450,6 +462,7 @@
 				01E7A55027DDD2950050E3A0 /* AreaInfoTableViewCell.xib in Resources */,
 				0123D65927D4D79C00D574BE /* DetailInfoTableViewCell.xib in Resources */,
 				0180BDE627DA613C004B161E /* OtherUnitsTableViewCell.xib in Resources */,
+				0150646F285B4E5900703CDE /* AboutHeaderView.xib in Resources */,
 				014658C027CB77C50076ECDF /* Main.storyboard in Resources */,
 				01F5D69927CBD71C00E1CA0D /* LibreBaskerville-Bold.ttf in Resources */,
 				01F5D69F27CBE2DD00E1CA0D /* MainHeaderView.xib in Resources */,
@@ -479,6 +492,7 @@
 			files = (
 				01515DEC2859D1B200AB6BA3 /* ScrollingTableHeaderView.swift in Sources */,
 				014658C327CB77C50076ECDF /* FarmhouseFavorites.xcdatamodeld in Sources */,
+				0150646D285B4E4C00703CDE /* AboutHeaderView.swift in Sources */,
 				01E7A55227DDF3140050E3A0 /* WebViewController.swift in Sources */,
 				01F5D6AE27CCC39000E1CA0D /* PageVC.swift in Sources */,
 				0170360D27D0C8CD00573664 /* DetailTopImagesTableViewCell.swift in Sources */,
@@ -505,10 +519,12 @@
 				01515DF7285A51DC00AB6BA3 /* AmenitiesTableViewCell.swift in Sources */,
 				014658BB27CB77C50076ECDF /* SceneDelegate.swift in Sources */,
 				0158E5CD27CFEC4300748725 /* UnitDetailTableViewController.swift in Sources */,
+				01506471285B564400703CDE /* Styles.swift in Sources */,
 				01E7A54F27DDD2950050E3A0 /* AreaInfoTableViewCell.swift in Sources */,
 				0180BDE127DA5DD3004B161E /* CheckInTableViewCell.swift in Sources */,
 				01F5D6A827CCB8F800E1CA0D /* UnitDetailViewController.swift in Sources */,
 				0123D66727D50FF600D574BE /* UIStackView+.swift in Sources */,
+				01506473285B56B800703CDE /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
