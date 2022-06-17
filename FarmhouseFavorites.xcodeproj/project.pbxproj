@@ -40,6 +40,7 @@
 		0170360A27D0C0D200573664 /* DetailHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0170360827D0C0D200573664 /* DetailHeaderTableViewCell.xib */; };
 		0170360D27D0C8CD00573664 /* DetailTopImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170360B27D0C8CD00573664 /* DetailTopImagesTableViewCell.swift */; };
 		0170360E27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0170360C27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib */; };
+		017B1F61285C400D0050EE2C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B1F60285C400D0050EE2C /* InfoViewController.swift */; };
 		0180BDDD27DA59A7004B161E /* SecondImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180BDDB27DA59A7004B161E /* SecondImageTableViewCell.swift */; };
 		0180BDDE27DA59A7004B161E /* SecondImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDDC27DA59A7004B161E /* SecondImageTableViewCell.xib */; };
 		0180BDE127DA5DD3004B161E /* CheckInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180BDDF27DA5DD3004B161E /* CheckInTableViewCell.swift */; };
@@ -121,6 +122,7 @@
 		0170360827D0C0D200573664 /* DetailHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		0170360B27D0C8CD00573664 /* DetailTopImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTopImagesTableViewCell.swift; sourceTree = "<group>"; };
 		0170360C27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTopImagesTableViewCell.xib; sourceTree = "<group>"; };
+		017B1F60285C400D0050EE2C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		0180BDDB27DA59A7004B161E /* SecondImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondImageTableViewCell.swift; sourceTree = "<group>"; };
 		0180BDDC27DA59A7004B161E /* SecondImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondImageTableViewCell.xib; sourceTree = "<group>"; };
 		0180BDDF27DA5DD3004B161E /* CheckInTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInTableViewCell.swift; sourceTree = "<group>"; };
@@ -172,13 +174,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0117D65F27DD014600CE1909 /* Inquire */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Inquire;
-			sourceTree = "<group>";
-		};
 		014658AC27CB77C50076ECDF = {
 			isa = PBXGroup;
 			children = (
@@ -256,12 +251,12 @@
 		01F5D68F27CBA4F200E1CA0D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				01E7A55127DDDAF20050E3A0 /* WebViewController.swift */,
-				0117D65F27DD014600CE1909 /* Inquire */,
+				017B1F60285C400D0050EE2C /* InfoViewController.swift */,
 				01F5D69B27CBE22D00E1CA0D /* Main */,
 				016FD0C827D5239A008A921B /* Menu Table */,
 				016FD0C927D526FD008A921B /* Reserve */,
 				01F5D6A927CCB90400E1CA0D /* Unit Detail */,
+				01E7A55127DDDAF20050E3A0 /* WebViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -512,6 +507,7 @@
 				01F5D6A627CC9D8500E1CA0D /* NSObject+.swift in Sources */,
 				0123D65827D4D79C00D574BE /* DetailInfoTableViewCell.swift in Sources */,
 				01515DF1285A15C300AB6BA3 /* UnitTableViewCell.swift in Sources */,
+				017B1F61285C400D0050EE2C /* InfoViewController.swift in Sources */,
 				01F5D6A427CC9CF800E1CA0D /* UIView+.swift in Sources */,
 				0170360227D0BFC600573664 /* UITableView+.swift in Sources */,
 				01F5D69327CBC55D00E1CA0D /* MainTableViewCell.swift in Sources */,

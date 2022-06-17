@@ -74,8 +74,11 @@ class MenuTableViewController: UITableViewController {
         case .language: fallthrough
         case .reserve: openURL(Constants.Urls.Booking)
         case .privacyPolicy: openURL(Constants.Urls.Privacy)
-        default:
-            break
+        case .info:
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            if let infoVC = storyBoard.instantiateViewController(withIdentifier: "InfoVC") as? InfoViewController {
+                self.navigationController?.pushViewController(infoVC, animated: true)
+            }
         }
         tableView.deselectRow(at: indexPath, animated: false)
     }

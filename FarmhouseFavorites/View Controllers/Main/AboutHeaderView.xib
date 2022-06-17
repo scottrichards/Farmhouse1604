@@ -32,13 +32,13 @@
                             <rect key="frame" x="19" y="19" width="376" height="267"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Farmhouse 1604" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNe-HK-h2P">
-                                    <rect key="frame" x="86.5" y="8" width="203" height="30"/>
+                                    <rect key="frame" x="86.5" y="16" width="203" height="30"/>
                                     <fontDescription key="fontDescription" name="LibreBaskerville-Regular" family="Libre Baskerville" pointSize="24"/>
                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wor-Ow-6Ik">
-                                    <rect key="frame" x="168" y="50" width="40" height="1"/>
+                                    <rect key="frame" x="168" y="58" width="40" height="1"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="EET-yc-wh9"/>
@@ -46,7 +46,7 @@
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvv-gn-KEN">
-                                    <rect key="frame" x="20" y="68" width="336" height="182"/>
+                                    <rect key="frame" x="20" y="76" width="336" height="174"/>
                                     <string key="text">Das Farmhouse 1604 liegt mit seinen vier großzügigen Ferienwohnungen im Seethal – im Tal hinter dem Chiemsee.
 
 Der Grundstein für das Farmhouse wurde bereits 1604 gesetzt.
@@ -57,12 +57,11 @@ Ursprünglich war dieses denkmalgeschützte Steinhaus das Bauernhaus eines Chiem
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <constraints>
                                 <constraint firstItem="wor-Ow-6Ik" firstAttribute="centerX" secondItem="mch-xk-rva" secondAttribute="centerX" id="4wS-zz-Asx"/>
                                 <constraint firstItem="wor-Ow-6Ik" firstAttribute="top" secondItem="BNe-HK-h2P" secondAttribute="bottom" constant="12" id="7ek-vV-jZu"/>
                                 <constraint firstItem="wor-Ow-6Ik" firstAttribute="top" secondItem="BNe-HK-h2P" secondAttribute="bottom" constant="12" id="AsA-bB-vTY"/>
-                                <constraint firstItem="BNe-HK-h2P" firstAttribute="top" secondItem="mch-xk-rva" secondAttribute="top" constant="8" id="DkM-DR-GxE"/>
+                                <constraint firstItem="BNe-HK-h2P" firstAttribute="top" secondItem="mch-xk-rva" secondAttribute="top" constant="16" id="DkM-DR-GxE"/>
                                 <constraint firstItem="Kvv-gn-KEN" firstAttribute="leading" secondItem="mch-xk-rva" secondAttribute="leading" constant="20" id="FMg-7i-uC6"/>
                                 <constraint firstAttribute="bottom" secondItem="Kvv-gn-KEN" secondAttribute="bottom" constant="17" id="JOS-FY-Irw"/>
                                 <constraint firstItem="Kvv-gn-KEN" firstAttribute="top" secondItem="wor-Ow-6Ik" secondAttribute="bottom" constant="17" id="NJ0-ex-9Tg"/>
@@ -95,7 +94,7 @@ Ursprünglich war dieses denkmalgeschützte Steinhaus das Bauernhaus eines Chiem
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="descriptionLabel" destination="Kvv-gn-KEN" id="gNh-wO-fnD"/>
-                <outlet property="textBorderView" destination="f76-Ml-mWG" id="ZzX-Ru-bI6"/>
+                <outlet property="textBorderView" destination="mch-xk-rva" id="ODd-UR-ccg"/>
                 <outlet property="titleLabel" destination="BNe-HK-h2P" id="aVs-1p-J6d"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="110.49107142857143"/>
@@ -105,9 +104,6 @@ Ursprünglich war dieses denkmalgeschützte Steinhaus das Bauernhaus eines Chiem
         <image name="AerialOfHouse" width="1600" height="1066"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

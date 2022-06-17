@@ -14,7 +14,7 @@ class AboutHeaderView: UITableViewHeaderFooterView {
     
     func populate(data: SectionHeaderData) {
         textBorderView.layer.borderColor = Styles.Colors.Border?.cgColor
-        textBorderView.layer.borderWidth = 1
+        textBorderView.layer.borderWidth = 0.5  
         titleLabel.text = data.title
         descriptionLabel.text = data.description
     }

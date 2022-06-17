@@ -195,6 +195,14 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if let sectionType = MainSections(rawValue: section) {
+            switch sectionType {
+            case .Units:
+                return 100.0
+            default:
+                return UITableView.automaticDimension
+            }
+        }
         return UITableView.automaticDimension
     }
     
