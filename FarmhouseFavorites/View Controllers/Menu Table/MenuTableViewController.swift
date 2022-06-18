@@ -11,16 +11,20 @@ enum MoreMenuItems : Int, CaseIterable {
     case language
     case reserve
     case info
+    case contact
     case privacyPolicy
     
     func itemText() -> String {
         switch self {
-        case .language:
-            return "Sprache"
+  
         case .reserve:
             return "Anfrage"
         case .info:
             return "Info"
+        case .language:
+            return "Sprache"
+        case .contact:
+            return "Impressum"
         case .privacyPolicy:
             return "Datenschutz"
         }
@@ -79,7 +83,10 @@ class MenuTableViewController: UITableViewController {
             if let infoVC = storyBoard.instantiateViewController(withIdentifier: "InfoVC") as? InfoViewController {
                 self.navigationController?.pushViewController(infoVC, animated: true)
             }
+        case .contact:
+            openURL(Constants.Urls.Booking)
         }
+        
         tableView.deselectRow(at: indexPath, animated: false)
     }
 
