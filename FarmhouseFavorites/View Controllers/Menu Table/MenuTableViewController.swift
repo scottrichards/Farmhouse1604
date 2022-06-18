@@ -11,6 +11,7 @@ enum MoreMenuItems : Int, CaseIterable {
     case language
     case reserve
     case info
+    case account
     case contact
     case privacyPolicy
     
@@ -23,6 +24,12 @@ enum MoreMenuItems : Int, CaseIterable {
             return "Info"
         case .language:
             return "Sprache"
+        case .account:
+            if UserManager.singleton.signedIn {
+                return "Sign Out"
+            } else {
+                return "Sign In"
+            }
         case .contact:
             return "Impressum"
         case .privacyPolicy:
@@ -78,6 +85,8 @@ class MenuTableViewController: UITableViewController {
         case .language: fallthrough
         case .reserve: openURL(Constants.Urls.Booking)
         case .privacyPolicy: openURL(Constants.Urls.Privacy)
+        case .account: openSignIn()
+            
         case .info:
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             if let infoVC = storyBoard.instantiateViewController(withIdentifier: "InfoVC") as? InfoViewController {
@@ -99,4 +108,26 @@ class MenuTableViewController: UITableViewController {
             }
         }
     }
+    
+    func openSignIn() {
+        if !UserManager.singleton.signedIn {
+            let signInViewController = SigninViewController.loadFromNib()
+            signInViewController.mode = .signIn
+            signInViewController.modalPresentationStyle = .fullScreen
+            signInViewController.delegate = self
+            self.present(signInViewController, animated: true, completion: nil)
+        } else {
+            UserManager.singleton.signOut { success in
+                self.tableView.reloadData()
+            }
+        }
+    }
+}
+
+extension MenuTableViewController: SignInViewControllerDelegate {
+    func doUserSignedIn() {
+        tableView.reloadData()
+    }
+    
+    
 }

@@ -46,6 +46,10 @@
 		01438449285E16D0004781BE /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 01438448285E16D0004781BE /* FirebaseCrashlytics */; };
 		0143844B285E16D0004781BE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0143844A285E16D0004781BE /* FirebaseDatabase */; };
 		0143844D285E16D0004781BE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0143844C285E16D0004781BE /* FirebaseStorage */; };
+		01438451285E1C94004781BE /* SigninViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0143844F285E1C94004781BE /* SigninViewController.xib */; };
+		01438452285E1C94004781BE /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01438450285E1C94004781BE /* SigninViewController.swift */; };
+		01438454285E1E23004781BE /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01438453285E1E23004781BE /* AnalyticsManager.swift */; };
+		01438456285E1F46004781BE /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01438455285E1F46004781BE /* ValidationManager.swift */; };
 		014658B927CB77C50076ECDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014658B827CB77C50076ECDF /* AppDelegate.swift */; };
 		014658BB27CB77C50076ECDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014658BA27CB77C50076ECDF /* SceneDelegate.swift */; };
 		014658C027CB77C50076ECDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014658BE27CB77C50076ECDF /* Main.storyboard */; };
@@ -145,6 +149,10 @@
 		0143843D285E13F9004781BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0143843F285E151B004781BE /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		01438441285E155B004781BE /* NSObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		0143844F285E1C94004781BE /* SigninViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SigninViewController.xib; sourceTree = "<group>"; };
+		01438450285E1C94004781BE /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		01438453285E1E23004781BE /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		01438455285E1F46004781BE /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		014658B527CB77C50076ECDF /* FarmhouseFavorites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmhouseFavorites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		014658B827CB77C50076ECDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		014658BA27CB77C50076ECDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -242,6 +250,8 @@
 		010D1D24285E0D9100DEF691 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				01438453285E1E23004781BE /* AnalyticsManager.swift */,
+				01438455285E1F46004781BE /* ValidationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -275,6 +285,15 @@
 				0143843D285E13F9004781BE /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		0143844E285E1C94004781BE /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				0143844F285E1C94004781BE /* SigninViewController.xib */,
+				01438450285E1C94004781BE /* SigninViewController.swift */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		014658AC27CB77C50076ECDF = {
@@ -362,6 +381,7 @@
 				01F5D69B27CBE22D00E1CA0D /* Main */,
 				016FD0C827D5239A008A921B /* Menu Table */,
 				016FD0C927D526FD008A921B /* Reserve */,
+				0143844E285E1C94004781BE /* SignIn */,
 				01F5D6A927CCB90400E1CA0D /* Unit Detail */,
 				01E7A55127DDDAF20050E3A0 /* WebViewController.swift */,
 			);
@@ -581,6 +601,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01438451285E1C94004781BE /* SigninViewController.xib in Resources */,
 				0180BDDE27DA59A7004B161E /* SecondImageTableViewCell.xib in Resources */,
 				01F5D69827CBD71900E1CA0D /* LibreBaskerville-Italic.ttf in Resources */,
 				0170360E27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib in Resources */,
@@ -643,7 +664,9 @@
 				01506463285B227E00703CDE /* AmenitySectionHeader.swift in Sources */,
 				010D1D5B285E0F3300DEF691 /* CGPoint+.swift in Sources */,
 				010D1D56285E0F3300DEF691 /* UIImageOrientation+.swift in Sources */,
+				01438454285E1E23004781BE /* AnalyticsManager.swift in Sources */,
 				01F5D6B027CCCA7F00E1CA0D /* PhotoAlbumPageVC.swift in Sources */,
+				01438456285E1F46004781BE /* ValidationManager.swift in Sources */,
 				01438440285E151B004781BE /* UIView+.swift in Sources */,
 				0123D66527D5073300D574BE /* MenuTableViewCell.swift in Sources */,
 				010D1D27285E0E0C00DEF691 /* Log.swift in Sources */,
@@ -654,6 +677,7 @@
 				0180BDE527DA613C004B161E /* OtherUnitsTableViewCell.swift in Sources */,
 				0143843B285E13A6004781BE /* Styles.swift in Sources */,
 				010D1D4E285E0F3300DEF691 /* CGRect+.swift in Sources */,
+				01438452285E1C94004781BE /* SigninViewController.swift in Sources */,
 				010D1D55285E0F3300DEF691 /* String+.swift in Sources */,
 				010D1D0D285E0B4900DEF691 /* UserManager.swift in Sources */,
 				010D1D44285E0F3300DEF691 /* UIDeviceOrientation+.swift in Sources */,
