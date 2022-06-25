@@ -54,6 +54,12 @@ class MenuTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UINib(nibName: String(describing: MenuHeaderView.self), bundle: Bundle.main), forHeaderFooterViewReuseIdentifier: String(describing: MenuHeaderView.self))
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
     }
 
     // MARK: - Table view data source
@@ -122,11 +128,29 @@ class MenuTableViewController: UITableViewController {
             }
         }
     }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let menuHeader = tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: MenuHeaderView.self)) as? MenuHeaderView else {
+            return nil
+        }
+        menuHeader.delegate = self
+        return menuHeader
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 110
+    }
 }
 
 extension MenuTableViewController: SignInViewControllerDelegate {
     func doUserSignedIn() {
         tableView.reloadData()
+    }
+}
+
+extension MenuTableViewController: MenuHeaderViewDelegate {
+    func onGoBackToMain() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     

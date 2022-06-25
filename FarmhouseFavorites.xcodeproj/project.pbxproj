@@ -85,6 +85,8 @@
 		0180BDE627DA613C004B161E /* OtherUnitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDE427DA613C004B161E /* OtherUnitsTableViewCell.xib */; };
 		0180BDE927DAA2B8004B161E /* FooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180BDE727DAA2B8004B161E /* FooterTableViewCell.swift */; };
 		0180BDEA27DAA2B8004B161E /* FooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180BDE827DAA2B8004B161E /* FooterTableViewCell.xib */; };
+		01A3F751286767D4004E0984 /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3F750286767D4004E0984 /* MenuHeaderView.swift */; };
+		01A3F753286767E0004E0984 /* MenuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01A3F752286767E0004E0984 /* MenuHeaderView.xib */; };
 		01E7A54F27DDD2950050E3A0 /* AreaInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E7A54D27DDD2950050E3A0 /* AreaInfoTableViewCell.swift */; };
 		01E7A55027DDD2950050E3A0 /* AreaInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E7A54E27DDD2950050E3A0 /* AreaInfoTableViewCell.xib */; };
 		01E7A55227DDF3140050E3A0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E7A55127DDDAF20050E3A0 /* WebViewController.swift */; };
@@ -192,6 +194,8 @@
 		0180BDE427DA613C004B161E /* OtherUnitsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherUnitsTableViewCell.xib; sourceTree = "<group>"; };
 		0180BDE727DAA2B8004B161E /* FooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterTableViewCell.swift; sourceTree = "<group>"; };
 		0180BDE827DAA2B8004B161E /* FooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterTableViewCell.xib; sourceTree = "<group>"; };
+		01A3F750286767D4004E0984 /* MenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
+		01A3F752286767E0004E0984 /* MenuHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuHeaderView.xib; sourceTree = "<group>"; };
 		01E7A54D27DDD2950050E3A0 /* AreaInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaInfoTableViewCell.swift; sourceTree = "<group>"; };
 		01E7A54E27DDD2950050E3A0 /* AreaInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaInfoTableViewCell.xib; sourceTree = "<group>"; };
 		01E7A55127DDDAF20050E3A0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -362,6 +366,8 @@
 			children = (
 				0123D66427D5073300D574BE /* MenuTableViewCell.swift */,
 				0123D66227D505E900D574BE /* MenuTableViewController.swift */,
+				01A3F750286767D4004E0984 /* MenuHeaderView.swift */,
+				01A3F752286767E0004E0984 /* MenuHeaderView.xib */,
 			);
 			path = "Menu Table";
 			sourceTree = "<group>";
@@ -605,6 +611,7 @@
 				0180BDDE27DA59A7004B161E /* SecondImageTableViewCell.xib in Resources */,
 				01F5D69827CBD71900E1CA0D /* LibreBaskerville-Italic.ttf in Resources */,
 				0170360E27D0C8CD00573664 /* DetailTopImagesTableViewCell.xib in Resources */,
+				01A3F753286767E0004E0984 /* MenuHeaderView.xib in Resources */,
 				0170360A27D0C0D200573664 /* DetailHeaderTableViewCell.xib in Resources */,
 				014658C827CB77C60076ECDF /* LaunchScreen.storyboard in Resources */,
 				014658C527CB77C60076ECDF /* Assets.xcassets in Resources */,
@@ -678,6 +685,7 @@
 				0143843B285E13A6004781BE /* Styles.swift in Sources */,
 				010D1D4E285E0F3300DEF691 /* CGRect+.swift in Sources */,
 				01438452285E1C94004781BE /* SigninViewController.swift in Sources */,
+				01A3F751286767D4004E0984 /* MenuHeaderView.swift in Sources */,
 				010D1D55285E0F3300DEF691 /* String+.swift in Sources */,
 				010D1D0D285E0B4900DEF691 /* UserManager.swift in Sources */,
 				010D1D44285E0F3300DEF691 /* UIDeviceOrientation+.swift in Sources */,
