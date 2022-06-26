@@ -59,6 +59,7 @@ class MenuTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+//        self.navigationController?.title = "Something"
         self.navigationController?.isNavigationBarHidden = true
     }
 

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SigninViewController" customModule="TruColoriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="changeModeContainerView" destination="FIA-vu-Ufo" id="yPt-cF-rMd"/>
+                <outlet property="confirmPasswordLabel" destination="UdO-EY-KrN" id="RFW-wQ-l8H"/>
+                <outlet property="confirmPasswordTextField" destination="Lrk-CX-xIB" id="lse-T6-6CZ"/>
+                <outlet property="emailLabel" destination="azH-Bm-Rya" id="pKR-aO-Zxk"/>
+                <outlet property="emailTextField" destination="C1p-yg-W8Z" id="Wy6-TF-BN0"/>
+                <outlet property="errorLabel" destination="b5q-wL-thY" id="pGe-Be-dHE"/>
+                <outlet property="forgotPasswordButton" destination="PBF-Xo-B4R" id="Cy9-FR-fQ2"/>
+                <outlet property="nameLabel" destination="dgV-mW-cM1" id="Ka5-FE-yRr"/>
+                <outlet property="nameTextField" destination="qk3-ha-yAE" id="nYN-lX-IZR"/>
+                <outlet property="passwordLabel" destination="OgI-Y9-wzW" id="BTX-Qo-ayU"/>
+                <outlet property="passwordTextField" destination="neM-9O-Oxo" id="dhl-u9-0fA"/>
+                <outlet property="signInButton" destination="rdh-7K-z2J" id="kgE-je-opP"/>
+                <outlet property="switchModeButton" destination="c9Q-C5-Dl7" id="TQP-xk-jz6"/>
+                <outlet property="titleLabel" destination="W7v-IX-zrE" id="BD3-a2-mtt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FIA-vu-Ufo">
+                    <rect key="frame" x="0.0" y="798" width="414" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9Q-C5-Dl7">
+                            <rect key="frame" x="8" y="16" width="398" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Don't have an account? Sign Up Here"/>
+                            <connections>
+                                <action selector="doToggleMode:" destination="-1" eventType="touchUpInside" id="boR-wt-yYk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.97254901960784312" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Axb-dz-KbL"/>
+                        <constraint firstItem="c9Q-C5-Dl7" firstAttribute="leading" secondItem="FIA-vu-Ufo" secondAttribute="leading" constant="8" id="YYa-WB-Pyi"/>
+                        <constraint firstItem="c9Q-C5-Dl7" firstAttribute="top" secondItem="FIA-vu-Ufo" secondAttribute="top" constant="16" id="iB9-If-5Si"/>
+                        <constraint firstAttribute="trailing" secondItem="c9Q-C5-Dl7" secondAttribute="trailing" constant="8" id="sJg-iC-szI"/>
+                        <constraint firstAttribute="bottom" secondItem="c9Q-C5-Dl7" secondAttribute="bottom" constant="16" id="te0-yd-isv"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="x9B-33-EQD"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TruHu Logo" translatesAutoresizingMaskIntoConstraints="NO" id="16C-1n-UsB">
+                    <rect key="frame" x="127" y="76" width="160" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="VvG-K6-SCS"/>
+                        <constraint firstAttribute="height" constant="36" id="ghG-4w-wk5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7v-IX-zrE">
+                    <rect key="frame" x="20" y="132" width="374" height="29"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="YYr-pE-0cm">
+                    <rect key="frame" x="20" y="181" width="374" height="472.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgV-mW-cM1">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Last" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qk3-ha-yAE">
+                            <rect key="frame" x="0.0" y="36.5" width="374" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="Q0e-o1-voI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" returnKeyType="next" textContentType="name"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azH-Bm-Rya" userLabel="Email">
+                            <rect key="frame" x="0.0" y="101.5" width="40" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C1p-yg-W8Z">
+                            <rect key="frame" x="0.0" y="138" width="374" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="xRA-mY-aTP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-Y9-wzW">
+                            <rect key="frame" x="0.0" y="203" width="69.5" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="neM-9O-Oxo" userLabel="Password Textfield">
+                            <rect key="frame" x="0.0" y="239.5" width="374" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="jkQ-q6-wET"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdO-EY-KrN" userLabel="Confirm Password">
+                            <rect key="frame" x="0.0" y="304.5" width="131.5" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lrk-CX-xIB" userLabel="Confirm Password Textfield">
+                            <rect key="frame" x="0.0" y="341" width="374" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="nrC-8Y-WYA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text=" There is an error" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5q-wL-thY" userLabel="Error Label">
+                            <rect key="frame" x="0.0" y="406" width="129.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="systemRedColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBF-Xo-B4R">
+                            <rect key="frame" x="0.0" y="443.5" width="374" height="29"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Forgot Password">
+                                <color key="titleColor" red="0.0" green="0.3411764705882353" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onForgotPassword:" destination="-1" eventType="touchUpInside" id="KIw-bw-whJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="neM-9O-Oxo" secondAttribute="trailing" id="6zQ-X5-VwP"/>
+                        <constraint firstItem="PBF-Xo-B4R" firstAttribute="leading" secondItem="YYr-pE-0cm" secondAttribute="leading" id="F64-Kr-sqk"/>
+                        <constraint firstAttribute="trailing" secondItem="Lrk-CX-xIB" secondAttribute="trailing" id="RaL-Jv-5qF"/>
+                        <constraint firstAttribute="trailing" secondItem="C1p-yg-W8Z" secondAttribute="trailing" id="Sjp-Uv-5Ce"/>
+                        <constraint firstItem="qk3-ha-yAE" firstAttribute="leading" secondItem="YYr-pE-0cm" secondAttribute="leading" id="Y2O-B1-uhM"/>
+                        <constraint firstAttribute="trailing" secondItem="qk3-ha-yAE" secondAttribute="trailing" id="wXT-7g-3G6"/>
+                        <constraint firstAttribute="trailing" secondItem="PBF-Xo-B4R" secondAttribute="trailing" id="yLK-yi-Nep"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdh-7K-z2J" customClass="TruHuButton" customModule="TruColoriOS" customModuleProvider="target">
+                    <rect key="frame" x="20" y="673.5" width="374" height="56"/>
+                    <color key="backgroundColor" red="0.14901960784313725" green="0.55294117647058827" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Ozy-D4-a4G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="doAction:" destination="-1" eventType="touchUpInside" id="0so-RU-9LT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="FIA-vu-Ufo" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="3I9-Gm-BkA"/>
+                <constraint firstItem="YYr-pE-0cm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5Uo-xK-g2A"/>
+                <constraint firstAttribute="trailing" secondItem="FIA-vu-Ufo" secondAttribute="trailing" id="DFL-va-CzI"/>
+                <constraint firstItem="W7v-IX-zrE" firstAttribute="top" secondItem="16C-1n-UsB" secondAttribute="bottom" constant="20" id="El6-ss-aZG"/>
+                <constraint firstItem="FIA-vu-Ufo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FWm-D2-rnm"/>
+                <constraint firstItem="YYr-pE-0cm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="GMa-Kw-Bkc"/>
+                <constraint firstItem="rdh-7K-z2J" firstAttribute="top" secondItem="YYr-pE-0cm" secondAttribute="bottom" constant="20" id="Ko2-KI-rod"/>
+                <constraint firstItem="FIA-vu-Ufo" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RLI-ZP-Rs9"/>
+                <constraint firstItem="16C-1n-UsB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="SbI-lb-6FU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rdh-7K-z2J" secondAttribute="trailing" constant="20" id="Vsk-j5-Ej8"/>
+                <constraint firstItem="rdh-7K-z2J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XKD-TG-ga1"/>
+                <constraint firstItem="16C-1n-UsB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="b9f-qY-pLp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="W7v-IX-zrE" secondAttribute="trailing" constant="20" id="bTY-WM-jDA"/>
+                <constraint firstItem="YYr-pE-0cm" firstAttribute="top" secondItem="W7v-IX-zrE" secondAttribute="bottom" constant="20" id="cah-ZB-jWi"/>
+                <constraint firstItem="FIA-vu-Ufo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eD4-gK-aYM"/>
+                <constraint firstItem="W7v-IX-zrE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="iZy-Ni-wEa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YYr-pE-0cm" secondAttribute="trailing" constant="20" id="ldd-td-8oj"/>
+                <constraint firstAttribute="bottom" secondItem="FIA-vu-Ufo" secondAttribute="bottom" constant="34" id="ohY-sG-O8d"/>
+                <constraint firstItem="rdh-7K-z2J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pHj-TM-mjK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YYr-pE-0cm" secondAttribute="trailing" constant="20" id="yh0-DZ-CmM"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TruHu Logo" width="160" height="37"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

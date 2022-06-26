@@ -56,6 +56,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iDX-Ej-Cuy">
                                 <rect key="frame" x="0.0" y="198" width="390" height="646"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FtO-pf-Zl9"/>
@@ -258,10 +259,12 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
         <scene sceneID="7sO-1O-KGQ">
             <objects>
                 <tableViewController storyboardIdentifier="MenuTableVC" id="fvG-jF-mvu" customClass="MenuTableViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ptm-as-NWx">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="110" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" id="Ptm-as-NWx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="contentLayoutGuide" id="kRa-jv-Xqp"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="YFb-VO-xUz"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="CS6-Nb-ugi" customClass="MenuTableViewCell" customModule="FarmhouseFavorites" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="60"/>
@@ -278,7 +281,7 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wka-YQ-gmq">
-                                            <rect key="frame" x="209.33333333333337" y="20.666666666666664" width="136" height="18.666666666666664"/>
+                                            <rect key="frame" x="209.33333333333337" y="20" width="136" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="136" id="pS3-ST-D60"/>
                                             </constraints>
@@ -308,25 +311,6 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QtL-UT-czx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="956.92307692307691" y="943.3649289099526"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="qki-vE-top">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Loi-4G-Iid" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Menu" selectedImage="Menu" id="btN-NS-noq"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zHe-cj-Utx">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="fvG-jF-mvu" kind="relationship" relationship="rootViewController" id="7zH-gR-JsB"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Qf-mT-6kT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="27.69230769230769" y="943.3649289099526"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yaS-x7-4p2">
