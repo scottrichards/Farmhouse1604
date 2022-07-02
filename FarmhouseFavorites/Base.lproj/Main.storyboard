@@ -258,8 +258,8 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
         <!--Menu Table View Controller-->
         <scene sceneID="7sO-1O-KGQ">
             <objects>
-                <tableViewController storyboardIdentifier="MenuTableVC" id="fvG-jF-mvu" customClass="MenuTableViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="110" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" id="Ptm-as-NWx">
+                <tableViewController storyboardIdentifier="MenuTableVC" automaticallyAdjustsScrollViewInsets="NO" id="fvG-jF-mvu" customClass="MenuTableViewController" customModule="FarmhouseFavorites" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" id="Ptm-as-NWx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -267,7 +267,7 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
                         <viewLayoutGuide key="frameLayoutGuide" id="YFb-VO-xUz"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="CS6-Nb-ugi" customClass="MenuTableViewCell" customModule="FarmhouseFavorites" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="60"/>
+                                <rect key="frame" x="0.0" y="49" width="390" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CS6-Nb-ugi" id="RIe-2f-Dam">
                                     <rect key="frame" x="0.0" y="0.0" width="361.33333333333331" height="60"/>
@@ -307,6 +307,7 @@ Kaffee-Maschine: Nespresso / Filter - Kaffee
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="cl7-dW-An3"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QtL-UT-czx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

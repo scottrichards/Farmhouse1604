@@ -17,7 +17,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SigninViewController" customModule="TruColoriOS" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SigninViewController" customModule="FarmhouseFavorites" customModuleProvider="target">
             <connections>
                 <outlet property="changeModeContainerView" destination="FIA-vu-Ufo" id="yPt-cF-rMd"/>
                 <outlet property="confirmPasswordLabel" destination="UdO-EY-KrN" id="RFW-wQ-l8H"/>
@@ -71,22 +71,22 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7v-IX-zrE">
-                    <rect key="frame" x="20" y="132" width="374" height="29"/>
+                    <rect key="frame" x="20" y="132" width="374" height="28"/>
                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="YYr-pE-0cm">
-                    <rect key="frame" x="20" y="181" width="374" height="472.5"/>
+                    <rect key="frame" x="20" y="180" width="374" height="470.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgV-mW-cM1">
-                            <rect key="frame" x="0.0" y="0.0" width="80" height="19.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="79" height="19"/>
                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Last" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qk3-ha-yAE">
-                            <rect key="frame" x="0.0" y="36.5" width="374" height="48"/>
+                            <rect key="frame" x="0.0" y="36" width="374" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="Q0e-o1-voI"/>
                             </constraints>
@@ -94,13 +94,13 @@
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" returnKeyType="next" textContentType="name"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azH-Bm-Rya" userLabel="Email">
-                            <rect key="frame" x="0.0" y="101.5" width="40" height="19.5"/>
+                            <rect key="frame" x="0.0" y="101" width="39.5" height="19"/>
                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C1p-yg-W8Z">
-                            <rect key="frame" x="0.0" y="138" width="374" height="48"/>
+                            <rect key="frame" x="0.0" y="137" width="374" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="xRA-mY-aTP"/>
                             </constraints>
@@ -108,13 +108,13 @@
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-Y9-wzW">
-                            <rect key="frame" x="0.0" y="203" width="69.5" height="19.5"/>
+                            <rect key="frame" x="0.0" y="202" width="71" height="19"/>
                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="neM-9O-Oxo" userLabel="Password Textfield">
-                            <rect key="frame" x="0.0" y="239.5" width="374" height="48"/>
+                            <rect key="frame" x="0.0" y="238" width="374" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="jkQ-q6-wET"/>
                             </constraints>
@@ -122,13 +122,13 @@
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdO-EY-KrN" userLabel="Confirm Password">
-                            <rect key="frame" x="0.0" y="304.5" width="131.5" height="19.5"/>
+                            <rect key="frame" x="0.0" y="303" width="132.5" height="19"/>
                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lrk-CX-xIB" userLabel="Confirm Password Textfield">
-                            <rect key="frame" x="0.0" y="341" width="374" height="48"/>
+                            <rect key="frame" x="0.0" y="339" width="374" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="nrC-8Y-WYA"/>
                             </constraints>
@@ -136,13 +136,13 @@
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text=" There is an error" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5q-wL-thY" userLabel="Error Label">
-                            <rect key="frame" x="0.0" y="406" width="129.5" height="20.5"/>
+                            <rect key="frame" x="0.0" y="404" width="129.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" systemColor="systemRedColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBF-Xo-B4R">
-                            <rect key="frame" x="0.0" y="443.5" width="374" height="29"/>
+                            <rect key="frame" x="0.0" y="441.5" width="374" height="29"/>
                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Forgot Password">
@@ -163,8 +163,8 @@
                         <constraint firstAttribute="trailing" secondItem="PBF-Xo-B4R" secondAttribute="trailing" id="yLK-yi-Nep"/>
                     </constraints>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdh-7K-z2J" customClass="TruHuButton" customModule="TruColoriOS" customModuleProvider="target">
-                    <rect key="frame" x="20" y="673.5" width="374" height="56"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdh-7K-z2J" customClass="TruHuButton" customModule="FarmhouseFavorites" customModuleProvider="target">
+                    <rect key="frame" x="20" y="670.5" width="374" height="56"/>
                     <color key="backgroundColor" red="0.14901960784313725" green="0.55294117647058827" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="Ozy-D4-a4G"/>
@@ -175,6 +175,15 @@
                     </state>
                     <connections>
                         <action selector="doAction:" destination="-1" eventType="touchUpInside" id="0so-RU-9LT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acZ-CT-iWS">
+                    <rect key="frame" x="33" y="44" width="25" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button" image="xmark" catalog="system"/>
+                    <connections>
+                        <action selector="doClose:" destination="-1" eventType="touchUpInside" id="z8r-j3-J7U"/>
                     </connections>
                 </button>
             </subviews>
@@ -207,6 +216,7 @@
     </objects>
     <resources>
         <image name="TruHu Logo" width="160" height="37"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

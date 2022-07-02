@@ -86,6 +86,11 @@ class SigninViewController: UIViewController {
         switchModeButton.setStyle(.LinkPrimary)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         switch mode {
@@ -133,6 +138,8 @@ class SigninViewController: UIViewController {
         }
     }
     
+    // MARK: Actions
+    
     @IBAction func doToggleMode(_ sender: Any) {
         if mode == .signIn {
             mode = .signUp
@@ -157,7 +164,7 @@ class SigninViewController: UIViewController {
 //            self.present(forgotPasswordViewController, animated: true, completion: nil)
 //        }
     }
-    
+
     
     @IBAction func doAction(_ sender: Any) {
         guard let email = emailTextField.text?.lowercased(), let password = passwordTextField.text, let displayName = nameTextField.text else {
